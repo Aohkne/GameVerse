@@ -7,8 +7,7 @@
     right: 0;
     left: 0;
     height: var(--header__img-height);
-    z-index: 1;
-    background-image: url(/asset/img/header_img.jpg);
+    z-index: 1;  
     background-size: cover;
 }
 
@@ -122,7 +121,6 @@
     top:calc(var(--header__img-height) );
     right: 0;
     left: 0;
-    background-image: url(/asset/img/container_img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px 0 var(--footer_content-height) 0;
