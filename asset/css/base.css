@@ -1,0 +1,31 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --btn-color: #2D99AE;
+
+    --header__img-height: 120px;
+    --header__nav-with-info-height: 80px;
+    --footer_content-height: 250px;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+html{
+    /* 16px ~ 100% */
+    /* 
+        đưa về =62.5% tương đương với 1 rem = 10px 
+        nếu muốn đưa về 12px thì chỉ cần ghi 1.2px 
+        */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}

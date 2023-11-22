@@ -1,0 +1,30 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hide-on-moblile-tablet{
+        display: none;
+    }
+    *{
+        display: none;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width: 740px)  and (max-width: 1023px) {
+    .hide-on-tablet{
+        display: none;
+    }
+
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-moblile{
+        display: none;
+    }
+
+  
+
+       
+}
