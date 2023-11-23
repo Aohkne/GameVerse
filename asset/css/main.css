@@ -8,7 +8,7 @@
     left: 0;
     height: var(--header__img-height);
     z-index: 1;  
-    background-image: url(../asset/img/header_img.jpg);
+    background-image: url(/asset/img/header_img.jpg);
     background-size: cover;
 }
 
