@@ -234,11 +234,11 @@
 .footer{
     position: absolute;
     display: block;
-    top: calc(90% + var(--footer_content-height)); 
+    /* top: calc(110% + var(--footer_content-height));  */
     right: 0;
     left: 0;
     height: var(--footer_content-height);
-    margin-top: calc(var(--trend-post-footer_margin) * 3);
+    /* margin-top: calc(var(--trend-post-footer_margin) * 3); */
     padding: 30px 0;
     border-top: 3px solid var(--white-color);
     background-image:linear-gradient(to bottom, #011C45, #2D99AE);
