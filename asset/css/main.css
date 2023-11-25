@@ -40,7 +40,7 @@
     line-height: 1.4rem;
     font-weight: 500;
     color: var(--black-color);
-    padding-left: 3px;
+    padding-left: 5px;
 }
 .header__user-item:hover{
     color: rgba(0, 0, 0, 0.5);
@@ -119,7 +119,7 @@
 /* App container */
 .app__container{
     position: relative;
-    top:calc(var(--header__img-height) );
+    top: calc(var(--header__img-height) );
     right: 0;
     left: 0;
     /* background-image: url(/asset/img/container_img.jpg); */
@@ -199,16 +199,16 @@
 
 .trend-post-footer{
     display: flex;
-    margin: 8px 0;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .trend-post-footer__btn{
     display: block;
-    width: 15%;
-    padding: 15px 12px;
-    background-color: #2D99AE;
     text-align: center;
+    margin: calc(var(--trend-post-footer_margin) / 2) auto var(--trend-post-footer_margin) auto ;
+    width: 15%;
+    padding: 15px 0;
+    background-color: #2D99AE;
     border-radius: 5px;
 }
 
@@ -219,6 +219,8 @@
 }
 
 .trend-post-footer-link{
+    display: inline-block;
+    padding: 2px 0;
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.6rem;
@@ -226,21 +228,33 @@
     text-transform: uppercase;
 }
 
+
 /* Footer */
 
 .footer{
     position: absolute;
     display: block;
-    top: 120%; 
+    top: calc(90% + var(--footer_content-height)); 
     right: 0;
     left: 0;
     height: var(--footer_content-height);
-    margin-top: 30px;
+    margin-top: calc(var(--trend-post-footer_margin) * 3);
     padding: 30px 0;
     border-top: 3px solid var(--white-color);
     background-image:linear-gradient(to bottom, #011C45, #2D99AE);
     
 }
+
+.footer::before{
+    content: url(../img/gif/finnandjake_Walk.gif);
+    display: block;
+    position: absolute;
+    top: -120%;
+    right: 0;
+    transform: scale(0.3);
+    margin-left: auto;
+}
+
 
 .footer_content{
     display: block;
@@ -277,6 +291,10 @@
     display: inline-block;
 }
 
+.footer-item:hover{
+    opacity: 0.5; 
+ }
+
 .footer__img{
     margin-top: 16px;
 }
@@ -289,7 +307,7 @@
 .footer_bottom{
     background-color: #011C45;
     margin-top: 36px;
-    padding: 6px;
+    padding: 8px 0;
 }
 
 .footer__text{
@@ -297,5 +315,7 @@
     color: #F5F5F5;
     text-align: center;
 }
+
+
 
 
