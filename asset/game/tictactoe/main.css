@@ -6,6 +6,23 @@
 }
 
 /* Header */
+
+.turnback_icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    background-color:  #FF2E63;
+}
+
+.turnback_icon:hover{
+    opacity: 0.5;
+}
+
 .align{
     display: flex;
     justify-content: center;

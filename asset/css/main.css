@@ -280,6 +280,8 @@
 }
 
 .trend-post-link{
+    display: block;
+    height: 250px;
     text-decoration: none;
 }
 
