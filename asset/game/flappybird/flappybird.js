@@ -2,7 +2,7 @@ let isPlay = false;
 //board - khai báo phần chơi
 let board;
 let boardWidth = 400; //360
-let boardHeight = 710; // 640
+let boardHeight = 680; // 640
 let context;
 
 //bird 
