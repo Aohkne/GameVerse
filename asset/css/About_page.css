@@ -215,6 +215,7 @@
     background-color: #BCFEFC;
     opacity: 0.5;
     border-radius: 5px;
+    box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .seft-post-img {
@@ -264,12 +265,10 @@
     position: relative;
     z-index: 2;
     display: block;
-    /* top: calc(110% + var(--footer_content-height));  */
     right: 0;
     left: 0;
     bottom: 0;
     height: var(--footer_content-height);
-    /* margin-top: calc(var(--trend-post-footer_margin) * 3); */
     padding: 30px 0;
     border-top: 3px solid var(--white-color);
     background-image: linear-gradient(to bottom, #011C45, #2D99AE);
