@@ -1,4 +1,4 @@
-*{
+* {
     color: white;
     font-family: sans-serif;
     transition: 0.2 ease-in-out;
@@ -7,29 +7,32 @@
 
 /* Header */
 
-.turnback_icon{
+.turnback_icon {
     position: absolute;
     top: 0;
     left: 0;
     margin: 10px;
     padding: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     text-decoration: none;
     font-size: 16px;
-    background-color:  #FF2E63;
+    background-color: #FF2E63;
 }
 
-.turnback_icon:hover{
+.turnback_icon:hover {
+    cursor: pointer;
     opacity: 0.5;
 }
 
-.align{
+.align {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-body{
+body {
     background-color: #252A34;
     margin: 0;
     padding: 0;
@@ -38,7 +41,7 @@ body{
     padding: 5vh;
 }
 
-.turn-container{
+.turn-container {
     width: 170px;
     height: 80px;
     margin: auto;
@@ -48,26 +51,26 @@ body{
     position: relative;
 }
 
-.turn-title{
+.turn-title {
     margin: 0;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-.turn-box{
+.turn-box {
     border: 3px solid #000;
     font-size: 1.6rem;
     font-weight: 700;
 }
 
-.turn-box:nth-child(even){
-    border-right: none ;
+.turn-box:nth-child(even) {
+    border-right: none;
 }
 
-.bg-box{
+.bg-box {
     position: absolute;
     bottom: 0;
-    left: 0;    
+    left: 0;
     width: 85px;
     height: 40px;
     background-color: #FF2E63;
@@ -76,7 +79,7 @@ body{
 
 /* Body (play Ground - main )*/
 
-.main-grid{
+.main-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -86,27 +89,27 @@ body{
     border: 2px solid #000;
 }
 
-.box{
+.box {
     cursor: pointer;
     font-size: 2rem;
     font-weight: 700px;
     border: 2px solid #000;
 }
 
-.box:hover{
+.box:hover {
     background-color: #FF2E63;
 }
 
 /* Footer */
-#result{
+#result {
     font-size: 1.2rem;
     font-weight: 500;
     margin: 200px auto;
 }
 
-#play_again{
+#play_again {
     background-color: #FF2E63;
-    padding:  10px 25px;
+    padding: 10px 25px;
     border: none;
     font-size: 1.2rem;
     border-radius: 5px;
@@ -114,7 +117,7 @@ body{
     display: none;
 }
 
-#play_again:hover{
+#play_again:hover {
     padding: 10px 40px;
     background-color: #08D9D6;
     color: #000;
