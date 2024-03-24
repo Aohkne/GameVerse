@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.turnback_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 1;
+    color: #fff;
+    background: linear-gradient(to right, #4568DC, #B06AB3);
+}
+
+.turnback_icon:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.nav {
+    width: auto;
+    height: 50px;
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity .5s;
+    background: linear-gradient(to right, #4568DC, #B06AB3);
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+.nav div,
+button,
+input {
+    margin: 5px;
+}
+
+.nav:hover,
+button:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.clr {
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: transform .2s;
+}
+
+.clr:hover {
+    transform: scale(1.2);
+}
+
+.clr:nth-child(1) {
+    background-color: #000;
+}
+
+.clr:nth-child(2) {
+    background-color: red;
+}
+
+.clr:nth-child(3) {
+    background-color: orange;
+}
+
+.clr:nth-child(4) {
+    background-color: yellow;
+}
+
+.clr:nth-child(5) {
+    background-color: greenyellow;
+}
+
+.clr:nth-child(6) {
+    background-color: blue;
+}
+
+.clr:nth-child(7) {
+    background-color: purple;
+}
+
+
+#choseColor {
+    padding: 5px 7px;
+    height: 59px;
+    width: 59px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    transition: transform .2s;
+}
+
+#choseColor::-webkit-color-swatch {
+    border-radius: 100px;
+}
+
+
+#choseColor:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: .6em 1em;
+    border-radius: 3px;
+    background-color: #03bb56;
+    color: #fff;
+    border: 3px solid #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.undo {
+    background-color: #0EB9CB;
+}
+
+.save {
+    background-color: #0f65d4;
+}
+
+input[type="color"] {
+    width: 60px;
+    height: 40px;
+}
+
+#ageOutputId {
+    color: #fff;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+#ageInputId {
+    background: linear-gradient(to right, #000428 0%, #004e92 100%);
+    height: 7px;
+    outline: none;
+    -webkit-appearance: none;
+    cursor: e-resize;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    accent-color: #fff;
+}
+
+.emoji {
+    font-size: 40px;
+    padding-bottom: 10px;
+}

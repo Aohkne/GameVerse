@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <script src="paint.js" defer></script>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <a onclick="history.back()" class="turnback_icon">
+        <i class="fa-solid fa-rotate-left"></i>
+    </a>
+    <div class="nav">
+        <div class="clr" data-clr="#000"></div>
+        <div class="clr" data-clr="red"></div>
+        <div class="clr" data-clr="orange"></div>
+        <div class="clr" data-clr="yellow"></div>
+        <div class="clr" data-clr="greenyellow"></div>
+        <div class="clr" data-clr="blue"></div>
+        <div class="clr" data-clr="purple"></div>
+        <input type="color" value="#FFFFFF" id="choseColor">
+
+        <button class="undo">Undo</button>
+        <button class="clear">Clear</button>
+        <button class="save">Save</button>
+        <input type="color" value="#FFFFFF" id="favcolor">
+        <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="10"
+            oninput="ageOutputId.value = ageInputId.value">
+        <output id="ageOutputId"></output>
+        <div class="emoji">🎨</div>
+    </div>
+</body>
+
+</html>
