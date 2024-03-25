@@ -35,4 +35,4 @@ My main goal is to entertain and please the players. I aim to provide a platform
 ## Getting Started
 Ready to jump into the action? Simply click the link below to start playing: :video_game:<a href="https://aohkne.github.io/web_FNK" target="_blank">Play Now!</a>
 
-Join us at FNK Website and let the gaming begin!
+Join at FNK Website and let the gaming begin!
