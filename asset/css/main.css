@@ -5,7 +5,7 @@
     position: relative;
     display: none;
     height: 500px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -16,7 +16,7 @@
     right: 0;
     left: 0;
     height: var(--header__img-height);
-    z-index: 1;
+    z-index: 2;
     /* background-image: url(/asset/img/header_img.jpg); */
     background-size: cover;
 }
@@ -64,71 +64,82 @@
 
 .header__nav-with-search {
     height: calc((var(--header__img-height) - var(--header__nav-with-info-height)));
-    width: 100%;
     background-image: linear-gradient(to bottom, #2D99AE, #011C45);
     border-radius: 10px;
 }
 
 .header__navbar-wrap {
-    display: flex;
-    margin: 0 30px;
+    padding: 0 20px;
     height: 100%;
     align-items: center;
 }
 
 .header__navbar-list {
     list-style: none;
-    display: flex;
-    height: 100%;
-    flex: 2;
+
 }
 
 .header__navbar-item {
     display: flex;
-    height: 100%;
-    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 
 .header__navbar-item:hover .header__navbar-item-link {
-    background-color: #BCFEFC;
     color: var(--black-color);
 }
 
+.header__navbar-item:hover {
+    background-color: #BCFEFC;
+}
+
 .header__navbar-item-link {
-    text-decoration: none;
-    padding: 12px 25px;
     display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    padding: 12px 20px;
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--white-color);
 }
 
 .header__navbar-search {
-    flex: 1;
-    max-width: calc(100% * 2/3);
-    max-height: 50%;
-    background-color: var(--white-color);
-    border-radius: 5px;
+    margin-left: auto;
+    height: 65%;
+    align-items: center;
     display: flex;
+    border-radius: 5px;
+    background-color: var(--white-color);
 }
 
+
 .header__navbar-search-input {
-    width: calc(100% * 4/5);
+    height: 100%;
+    width: 90%;
     background: transparent;
-    border: 1px solid transparent;
+    border: none;
+    border-right: 1px solid #ccc;
     outline: none;
-    padding: 4px 10px;
     font-size: 1.4rem;
 }
 
 .header__navbar-search-icon {
-    display: block;
-    padding: 3px 5px;
+    float: right;
+    height: 100%;
     margin-left: auto;
-    font-size: 1.2rem;
+    padding: 0 10px;
+    transform: translateY(25%);
+    font-size: 1.3rem;
     font-weight: 400;
     align-items: center;
+    cursor: pointer;
+}
+
+.header__navbar-menu-icon {
+    display: none;
+    cursor: pointer;
 }
 
 /* App container */
@@ -138,7 +149,8 @@
     right: 0;
     left: 0;
     background-image: linear-gradient(to bottom, #2D99AE, #011C45);
-    background-size: cover;
+    background-size: contain;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     padding: 20px 0 var(--footer_content-height) 0;
 }
@@ -147,7 +159,7 @@
 .slider {
     position: relative;
     height: 450px;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
     border-radius: 30px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 1);
     overflow: hidden;
@@ -158,6 +170,8 @@
     height: 100%;
     display: flex;
     transition: 1s;
+    display: flex;
+    justify-content: center;
 }
 
 .slider-item img {
@@ -165,9 +179,8 @@
     display: block;
     margin: auto;
     height: 100%;
-    width: 78.5vw;
-    border-radius: 30px;
-    object-fit: cover;
+    width: 80vw;
+    object-fit: fill;
 }
 
 .slider-button {
@@ -243,6 +256,10 @@
     text-transform: uppercase;
 }
 
+.home-post-item {
+    margin-top: 10px;
+}
+
 
 .home-post-list {
     list-style: none;
@@ -260,8 +277,8 @@
     display: block;
     background-size: cover;
     width: 100%;
-    height: 100%;
-    border-radius: 5px;
+    height: 200px;
+    border-radius: 10px;
 }
 
 .trend-post {
@@ -275,8 +292,6 @@
 
 .trend-post-item {
     margin-bottom: 45px;
-    /* position: absolute; */
-
 }
 
 .trend-post-item:hover,
@@ -289,16 +304,15 @@
 
 .trend-post-link {
     display: block;
-    height: 250px;
+    height: 100%;
     text-decoration: none;
 }
 
 .trend-post-img {
     display: block;
-    background-size: cover;
     width: 100%;
-    height: 100%;
-    border-radius: 2px;
+    height: 200px;
+    border-radius: 10px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     transition: transform linear 0.1s;
     will-change: transform;
@@ -307,9 +321,9 @@
 .trend-post-name {
     text-align: center;
     color: var(--white-color);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 300;
-    padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .trend-post__footer {
@@ -345,32 +359,21 @@
 /* Footer */
 
 .footer {
-    position: absolute;
+    position: relative;
+    z-index: 2;
     display: block;
-    /* top: calc(110% + var(--footer_content-height));  */
     right: 0;
     left: 0;
-    height: var(--footer_content-height);
-    /* margin-top: calc(var(--trend-post-footer_margin) * 3); */
+    bottom: 0;
     padding: 30px 0;
     border-top: 3px solid var(--white-color);
     background-image: linear-gradient(to bottom, #011C45, #2D99AE);
 
 }
 
-.footer::before {
-    content: url(../img/gif/finnandjake_Walk.gif);
-    display: block;
-    position: absolute;
-    top: -120%;
-    right: 0;
-    transform: scale(0.3);
-    margin-left: auto;
-}
-
 
 .footer_content {
-    display: block;
+    margin-bottom: 10px;
 
 }
 
@@ -379,7 +382,7 @@
     display: inline-block;
     padding: 8px 0;
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 300px;
     border-bottom: 2px solid #FF1D1D;
 }
@@ -391,15 +394,16 @@
 
 
 .footer-item__icon {
+    align-self: center;
     display: block;
     margin-right: 8px;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .footer-item__link {
     text-decoration: none;
     color: var(--white-color);
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     padding: 5px 0;
     display: inline-block;
 }
@@ -419,8 +423,10 @@
 
 .footer_bottom {
     background-color: #011C45;
-    margin-top: 36px;
+    position: absolute;
+    width: 100%;
     padding: 8px 0;
+    margin-top: 10px;
 }
 
 .footer__text {

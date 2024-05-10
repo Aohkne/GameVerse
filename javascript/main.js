@@ -55,3 +55,20 @@ sliderDot.forEach((li, key) => {
         reloadSlider();
     })
 })
+
+
+// open nav menu
+// const icon = document.getElementsByClassName('fa-bars');
+
+function openMenu() {
+    if (document.querySelector('.header__navbar-list').style.display == 'none') {
+        document.querySelector('.fa-bars').classList.add('fa-x');
+        document.querySelector('.header__navbar-list').style.display = 'block';
+    } else {
+        document.querySelector('.fa-bars').classList.remove('fa-x');
+        document.querySelector('.header__navbar-list').style.display = 'none';
+
+    }
+}
+
+

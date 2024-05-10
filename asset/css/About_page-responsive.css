@@ -4,15 +4,7 @@
         display: none;
     }
 
-    /* slider */
-    .slider-item img {
-        position: relative;
-        display: block;
-        margin: auto;
-        height: 100%;
-        width: 100vw;
-        object-fit: fill;
-    }
+
 }
 
 /* Tablet */
@@ -20,16 +12,14 @@
     .hide-on-tablet {
         display: none;
     }
-
-
 }
 
 /* Mobile */
 @media (max-width: 739px) {
+
     .hide-on-moblile {
         display: none;
     }
-
 
 
     /* header */
@@ -77,46 +67,10 @@
         padding: 0 10px;
     }
 
-    /* Slider */
-    .slider {
-        border-radius: 0;
-    }
-
-    .slider-item img {
-        position: relative;
-        display: block;
-        margin: auto;
-        height: 100%;
-        width: 100vw;
-        object-fit: fill;
-    }
-
-
-    /* recommend */
-    .home-post-img {
-        border-radius: 0;
-    }
-
-    /* Game */
-    .trend-post-img {
-        border-radius: 0;
-    }
-
-    .trend-post-img {
-        display: block;
-        width: 100%;
-        height: 350px;
-        border-radius: 0;
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-        transition: transform linear 0.1s;
-        will-change: transform;
-    }
-
     /* footer */
     .footer_content {
         text-align: center;
     }
-
 
     .footer__img-qr {
         margin: 0 auto;

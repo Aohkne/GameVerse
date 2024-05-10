@@ -1,4 +1,4 @@
-:root{
+:root {
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
@@ -12,14 +12,14 @@
 }
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
     scroll-behavior: smooth;
 }
 
-html{
+html {
     /* 16px ~ 100% */
     /* 
         đưa về =62.5% tương đương với 1 rem = 10px 

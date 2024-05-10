@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- link -->
+    <!-- link css-->
     <link rel="stylesheet" href="./asset/css/About_page.css">
     <link rel="stylesheet" href="./asset/css/grid.css">
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/About_page-responsive.css">
+
+    <!-- link javascript -->
+    <script src="./javascript/main.js" defer></script>
 </head>
 
 <body>
@@ -23,32 +27,36 @@
                         <img class="header__logo-img" src="./asset/img/logo_img.jpg" alt="FNK">
                     </a>
 
-                    <div class="header__user">
+                    <div class="header__user hide-on-moblile">
                         <a href="" class="header__user-item">Login</a>
                         <a href="" class="header__user-item">Register</a>
                     </div>
                 </div>
 
-                <div class="header__nav-with-search">
-                    <div class="header__navbar-wrap">
-                        <ul class="header__navbar-list">
-                            <li class="header__navbar-item">
+                <div class="header__nav-with-search  ">
+                    <div class="header__navbar-wrap  row ">
+                        <ul class="header__navbar-list hide-on-moblile  row">
+                            <li class="header__navbar-item col l-3 m-3  ">
                                 <a href="./index.html" class="header__navbar-item-link">HOME</a>
                             </li>
-                            <li class="header__navbar-item">
+                            <li class="header__navbar-item col l-3 m-3  ">
                                 <a href="./Game_page.html" class="header__navbar-item-link">GAME</a>
                             </li>
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">ADVENTURE</a>
+                            <li class="header__navbar-item col l-3 m-3  ">
+                                <a href="" class="header__navbar-item-link">BETA</a>
                             </li>
-                            <li class="header__navbar-item">
+                            <li class="header__navbar-item col l-3 m-3  ">
                                 <a href="#" class="header__navbar-item-link">ABOUT</a>
                             </li>
                         </ul>
 
-                        <div class="header__navbar-search">
+                        <div class="header__navbar-search col l-5">
                             <input type="text" placeholder="Search..." class="header__navbar-search-input">
                             <i class="header__navbar-search-icon fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <div class="header__navbar-menu-icon" onclick="openMenu()">
+                            <i class="fa-solid fa-bars"></i>
                         </div>
 
                     </div>
@@ -62,8 +70,8 @@
             <div class="grid wide">
                 <!-- introduce about me -->
 
-                <div class="seft-post">
-                    <div class="seft-post-introduce">
+                <div class="seft-post row  ">
+                    <div class="seft-post-introduce  col l-6 c-12">
                         <div class="seft-post-text">
                             <h1 class="text-head">HI, I'm Khoa</h1>
                             <h1 class="text-body">Frontend Developer</h1>
@@ -75,38 +83,40 @@
                                 Hope you guys love it! ♥️
                             </p>
                         </div>
-                        <div class="seft-post-social">
+                        <div class="seft-post-social row">
 
-                            <a href="https://github.com/Aohkne" class="seft-post-link">
+                            <a href="https://github.com/Aohkne" class="seft-post-link col l-2 m-3 c-3">
                                 <i class="fa-brands fa-github seft-post-icon"></i>
                             </a>
 
-                            <a href="https://www.facebook.com/huukhoa.le.79/" class="seft-post-link">
+                            <a href="https://www.facebook.com/huukhoa.le.79/" class="seft-post-link col l-2 m-3 c-3">
                                 <i class="fa-brands fa-facebook seft-post-icon"></i>
                             </a>
 
-                            <a href="#" class="seft-post-link">
+                            <a href="#" class="seft-post-link col l-2 m-3 c-3">
                                 <i class="fa-brands fa-instagram seft-post-icon"></i>
                             </a>
 
-                            <a href="mailto: aohkne@gmail.com" class="seft-post-link">
+                            <a href="mailto: aohkne@gmail.com" class="seft-post-link col l-2 m-3 c-3">
                                 <i class="fa-solid fa-envelope seft-post-icon"></i>
                                 <!-- aohkne@gmail.com -->
                             </a>
 
-                            <button class="seft-btn">
+                            <button class="seft-btn col l-4 m-12 c-12">
                                 <a href="https://github.com/Aohkne" class="seft-btn-link">
-                                    More infomation
+                                    More Me
                                     <i class="fa-solid fa-circle-chevron-right seft-btn-icon"></i>
                                 </a>
                             </button>
-                            
+
 
                         </div>
                     </div>
 
-                    <div class="seft-post-img-container">
-                        <img src="./asset/img_AboutPage/introduce/seft.png" alt="" class="seft-post-img"></img>
+                    <div class="seft-post-img-container col l-5 c-12">
+                        <div class="seft-post-img-background">
+                            <img src="./asset/img_AboutPage/introduce/seft.png" alt="" class="seft-post-img"></img>
+                        </div>
                     </div>
 
                 </div>
@@ -116,9 +126,9 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="grid wide footer_content">
+            <div class="grid wide">
                 <div class="row">
-                    <div class="col l-4">
+                    <div class="footer_content col l-4 m-4 c-12">
                         <h3 class="footer__heading">CATEGORY</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -130,7 +140,7 @@
                             </li>
 
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Adventure</a>
+                                <a href="" class="footer-item__link">Beta</a>
                             </li>
 
                             <li class="footer-item">
@@ -140,13 +150,9 @@
                         </ul>
                     </div>
 
-                    <div class="col l-4">
+                    <div class="footer_content col l-4 m-4 c-12">
                         <h3 class="footer__heading">FOLLOW</h3>
                         <ul class="footer-list">
-                            <li class="footer-item">
-                                <i class="footer-item__icon fa-brands fa-instagram" style="color: #ffffff;"></i>
-                                <a href="" class="footer-item__link">Instagram</a>
-                            </li>
 
                             <li class="footer-item">
                                 <i class="footer-item__icon fa-brands fa-github" style="color: #ffffff;"></i>
@@ -158,10 +164,16 @@
                                 <a href="https://www.facebook.com/huukhoa.le.79/" class="footer-item__link">Facebook</a>
                             </li>
 
+                            <li class="footer-item">
+                                <i class="footer-item__icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+                                <a href="" class="footer-item__link">Instagram</a>
+                            </li>
+
+
                         </ul>
                     </div>
 
-                    <div class="col l-4">
+                    <div class="footer_content col l-4 m-4 c-12">
                         <h3 class="footer__heading">CONTACT</h3>
                         <div class="footer__img">
                             <img src="./asset/img/qr_img.jpg" alt="Facebook QR" class="footer__img-qr">

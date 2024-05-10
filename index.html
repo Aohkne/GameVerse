@@ -18,7 +18,7 @@
         <!-- 404 notification -->
         <div style="background-image: url(./asset/img/404.jpg);" id="error__Notification"></div>
         <!-- header -->
-        <header style="background-image: url(./asset/img/header_img.jpg);" class="header hide-on-moblile-tablet">
+        <header style="background-image: url(./asset/img/header_img.jpg);" class="header">
 
             <div class="grid wide">
                 <div class="header__nav-with-info">
@@ -26,32 +26,36 @@
                         <img class="header__logo-img" src="./asset/img/logo_img.jpg" alt="FNK">
                     </a>
 
-                    <!-- <div class="header__user">
+                    <div class="header__user hide-on-moblile">
                         <a href="" class="header__user-item">Login</a>
                         <a href="" class="header__user-item">Register</a>
-                    </div> -->
+                    </div>
                 </div>
 
-                <div class="header__nav-with-search">
-                    <div class="header__navbar-wrap">
-                        <ul class="header__navbar-list">
-                            <li class="header__navbar-item">
-                                <a href="#" class="header__navbar-item-link">HOME</a>
+                <div class="header__nav-with-search  ">
+                    <div class="header__navbar-wrap  row ">
+                        <ul class="header__navbar-list hide-on-moblile  row">
+                            <li class="header__navbar-item col l-3 m-3  ">
+                                <a href="./index.html" class="header__navbar-item-link">HOME</a>
                             </li>
-                            <li class="header__navbar-item">
+                            <li class="header__navbar-item col l-3 m-3  ">
                                 <a href="./Game_page.html" class="header__navbar-item-link">GAME</a>
                             </li>
-                            <li class="header__navbar-item">
-                                <a href="" class="header__navbar-item-link">ADVENTURE</a>
+                            <li class="header__navbar-item col l-3 m-3  ">
+                                <a href="" class="header__navbar-item-link">BETA</a>
                             </li>
-                            <li class="header__navbar-item">
+                            <li class="header__navbar-item col l-3 m-3  ">
                                 <a href="./About_page.html" class="header__navbar-item-link">ABOUT</a>
                             </li>
                         </ul>
 
-                        <div class="header__navbar-search">
+                        <div class="header__navbar-search col l-5">
                             <input type="text" placeholder="Search..." class="header__navbar-search-input">
                             <i class="header__navbar-search-icon fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <div class="header__navbar-menu-icon" onclick="openMenu()">
+                            <i class="fa-solid fa-bars"></i>
                         </div>
 
                     </div>
@@ -60,7 +64,7 @@
 
         </header>
 
-        <div class="app__container hide-on-moblile-tablet">
+        <div class="app__container">
             <div class="grid wide">
 
                 <!-- slider  -->
@@ -117,35 +121,27 @@
 
                         <ul class="home-post-list row ">
 
-
-
-                            <li class="home-post-item col l-2-4 m-4 ">
+                            <li class="home-post-item col l-3 m-6 c-6">
                                 <a href="./asset/game/tictactoe/tictactoe.html" class="home-post-link">
                                     <img src="./asset/img/Game_img/tictactoe_img.jpg" alt="" class="home-post-img">
                                 </a>
                             </li>
 
-                            <li class="home-post-item col l-2-4 m-4 ">
+                            <li class="home-post-item col l-3 m-6 c-6">
                                 <a href="./asset/game/flappybird/flappybird.html" class="home-post-link">
                                     <img src="./asset/img/Game_img/flappybird_img.jpg" alt="" class="home-post-img">
                                 </a>
                             </li>
 
-                            <li class="home-post-item col l-2-4 m-4 ">
+                            <li class="home-post-item col l-3 m-6 c-6">
                                 <a href="./asset/game/pacman/pacman.html" class="home-post-link">
                                     <img src="./asset/img/Game_img/pacman_img.jpg" alt="" class="home-post-img">
                                 </a>
                             </li>
 
-                            <li class="home-post-item col l-2-4 m-4 ">
+                            <li class="home-post-item col l-3 m-6 c-6">
                                 <a href="./asset/game/paint/paint.html" class="home-post-link">
                                     <img src="./asset/img/Game_img/paint_img.jpg" alt="" class="home-post-img">
-                                </a>
-                            </li>
-
-                            <li class="home-post-item col l-2-4 m-4 ">
-                                <a href="" class="home-post-link">
-                                    <img src="./asset/img/imgNotFound.jpg" alt="" class="home-post-img">
                                 </a>
                             </li>
 
@@ -155,43 +151,45 @@
                     </div>
                 </div>
 
+                <!-- Game -->
+
                 <div class="trend-post">
                     <a class="trend-post__heading">Game</a>
 
                     <ul class="trend-post-list row">
 
-                        <li class="trend-post-item col l-4">
+                        <li class="trend-post-item col l-4 m-12 c-12">
                             <a href="./asset/game/tictactoe/tictactoe.html" class="trend-post-link">
                                 <img class="trend-post-img" src="./asset/img/Game3/tictactoe_img.jpg" alt="tictactoe">
                             </a>
                             <div class="trend-post-name">Tic Tac Toe</div>
 
                         </li>
-                        <li class="trend-post-item col l-4">
+                        <li class="trend-post-item col l-4 m-12 c-12">
                             <a href="./asset/game/flappybird/flappybird.html" class="trend-post-link">
                                 <img class="trend-post-img" src="./asset/img/Game3/flappybird_img.jpg" alt="">
                             </a>
                             <div class="trend-post-name">Flappy Bird</div>
                         </li>
-                        <li class="trend-post-item col l-4">
+                        <li class="trend-post-item col l-4 m-12 c-12">
                             <a href="./asset/game/pacman/pacman.html" class="trend-post-link">
                                 <img class="trend-post-img" src="./asset/img/Game3/pacman_img.jpg" alt="">
                             </a>
                             <div class="trend-post-name">Pac-Man</div>
                         </li>
-                        <li class="trend-post-item col l-4">
+                        <li class="trend-post-item col l-4 m-12 c-12">
                             <a href="./asset/game/paint/paint.html" class="trend-post-link">
                                 <img class="trend-post-img" src="./asset/img/Game3/paint_img.jpg" alt="">
                             </a>
                             <div class="trend-post-name">Paint</div>
                         </li>
-                        <li class="trend-post-item col l-4">
+                        <li class="trend-post-item col l-4 m-12 c-12">
                             <a href="" class="trend-post-link">
                                 <img class="trend-post-img" src="./asset/img/imgNotFound.jpg" alt="">
                             </a>
                             <div class="trend-post-name">Tic Tac Toe</div>
                         </li>
-                        <li class="trend-post-item col l-4">
+                        <li class="trend-post-item col l-4 m-12 c-12">
                             <a href="" class="trend-post-link">
                                 <img class="trend-post-img" src="./asset/img/imgNotFound.jpg" alt="">
                             </a>
@@ -217,14 +215,14 @@
         </div>
         <!-- Footer -->
 
-        <footer class="footer hide-on-moblile-tablet">
-            <div class="grid wide footer_content">
+        <footer class="footer">
+            <div class="grid wide">
                 <div class="row">
-                    <div class="col l-4">
+                    <div class="footer_content col l-4 m-4 c-12">
                         <h3 class="footer__heading">CATEGORY</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="#" class="footer-item__link">Home</a>
+                                <a href="./index.html" class="footer-item__link">Home</a>
                             </li>
 
                             <li class="footer-item">
@@ -232,7 +230,7 @@
                             </li>
 
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Adventure</a>
+                                <a href="" class="footer-item__link">Beta</a>
                             </li>
 
                             <li class="footer-item">
@@ -242,13 +240,9 @@
                         </ul>
                     </div>
 
-                    <div class="col l-4">
+                    <div class="footer_content col l-4 m-4 c-12">
                         <h3 class="footer__heading">FOLLOW</h3>
                         <ul class="footer-list">
-                            <li class="footer-item">
-                                <i class="footer-item__icon fa-brands fa-instagram" style="color: #ffffff;"></i>
-                                <a href="" class="footer-item__link">Instagram</a>
-                            </li>
 
                             <li class="footer-item">
                                 <i class="footer-item__icon fa-brands fa-github" style="color: #ffffff;"></i>
@@ -260,10 +254,16 @@
                                 <a href="https://www.facebook.com/huukhoa.le.79/" class="footer-item__link">Facebook</a>
                             </li>
 
+                            <li class="footer-item">
+                                <i class="footer-item__icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+                                <a href="" class="footer-item__link">Instagram</a>
+                            </li>
+
+
                         </ul>
                     </div>
 
-                    <div class="col l-4">
+                    <div class="footer_content col l-4 m-4 c-12">
                         <h3 class="footer__heading">CONTACT</h3>
                         <div class="footer__img">
                             <img src="./asset/img/qr_img.jpg" alt="Facebook QR" class="footer__img-qr">
