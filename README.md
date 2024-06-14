@@ -33,6 +33,6 @@ My main goal is to entertain and please the players. I aim to provide a platform
       Get in touch with me! Whether you have feedback, questions or suggestions, I am always ready to listen. Get in touch via email, social media or my online contact form. I appreciate your input and strive to        provide the best gaming experience possible.
  
 ## Getting Started
-Ready to jump into the action? Simply click the link below to start playing: :video_game:<a href="https://aohkne.github.io/web_FNK" target="_blank">Play Now!</a>
+Ready to jump into the action? Simply click the link below to start playing: :video_game:<a href="https://aohkne.github.io/FNK/" target="_blank">Play Now!</a>
 
 Join at FNK Website and let the gaming begin!
