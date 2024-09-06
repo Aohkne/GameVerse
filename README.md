@@ -1,9 +1,9 @@
-# FNK Website
+# GameVerse Website
 
-Welcome to the FNK Website repository, where I'm dedicated to crafting exceptional web game experiences. My focus lies in delivering top-notch user experiences, sleek user interfaces, and robust algorithms to ensure you have the best gaming adventure possible.
+Welcome to the GameVerse Website repository, where I'm dedicated to crafting exceptional web game experiences. My focus lies in delivering top-notch user experiences, sleek user interfaces, and robust algorithms to ensure you have the best gaming adventure possible.
 ## Introduce
 
-At FNK Website, I'm passionate about pushing the boundaries of web game development. I am committed to creating engaging games that engage and excite players of all ages. With attention to detail and a love of innovation, we strive to deliver amazing experiences that keep you coming back for more.
+At GameVerse Website, I'm passionate about pushing the boundaries of web game development. I am committed to creating engaging games that engage and excite players of all ages. With attention to detail and a love of innovation, we strive to deliver amazing experiences that keep you coming back for more.
 
 ## Purpose
 
@@ -33,6 +33,6 @@ My main goal is to entertain and please the players. I aim to provide a platform
       Get in touch with me! Whether you have feedback, questions or suggestions, I am always ready to listen. Get in touch via email, social media or my online contact form. I appreciate your input and strive to        provide the best gaming experience possible.
  
 ## Getting Started
-Ready to jump into the action? Simply click the link below to start playing: :video_game:<a href="https://aohkne.github.io/FNK/" target="_blank">Play Now!</a>
+Ready to jump into the action? Simply click the link below to start playing: :video_game:<a href="https://aohkne.github.io/GameVerse/" target="_blank">Play Now!</a>
 
-Join at FNK Website and let the gaming begin!
+Join at GameVerse Website and let the gaming begin!
