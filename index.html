@@ -4,289 +4,387 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FNK</title>
-    <!-- Link css -->
+    <title>GameVerse</title>
+
+    <!-- link logo -->
+    <link rel="icon" href="./asset/img_All/logo.png" type="image/x-icon">
+
+    <!-- link css -->
     <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="asset/css/css_All/authentication_Form.css">
     <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="stylesheet" href="./asset/css/grid.css">
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/font/fontawesome-free-6.4.2-web/css/all.min.css">
+
+    <!--  link js-->
+    <script src="javascript/main.js" defer></script>
+    <script src="javascript/javascript_All/authentication_Form.js" defer></script>
 </head>
 
 <body>
+
     <div class="app">
-        <!-- 404 notification -->
-        <div style="background-image: url(./asset/img/404.jpg);" id="error__Notification"></div>
-        <!-- header -->
-        <header style="background-image: url(./asset/img/header_img.jpg);" class="header">
 
-            <div class="grid wide">
-                <div class="header__nav-with-info">
-                    <a href="#" class="header__logo-link">
-                        <img class="header__logo-img" src="./asset/img/logo_img.jpg" alt="FNK">
-                    </a>
+        <!-- Header -->
+        <div class="header">
+            <div class="grid">
 
-                    <div class="header__user hide-on-moblile">
-                        <a href="" class="header__user-item">Login</a>
-                        <a href="" class="header__user-item">Register</a>
+                <div class="nav">
+
+                    <div class="row no-gutters">
+
+                        <span class="col l-2 m-5 c-10">
+                            <div class="nav__icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="nav__logo">
+                                <a href="./index.html">
+                                    <img src="./asset/img_All/logoImg.png" alt="GameVerse">
+                                </a>
+                            </div>
+                        </span>
+
+
+
+                        <div class="nav__user col l-1 m-2 c-2">
+                            <div class="nav__signInBtn">
+
+                                <button>Sign In</button>
+
+                            </div>
+
+                            <!-- <div class="userNav">
+                                <i class="fa-solid fa-circle-user userNav__icon"></i>
+                                <div class="userNav__container">
+
+                                    <div class="userNav__info">
+                                        <i class="fa-solid fa-circle-user"></i>
+                                        <span>
+                                            <div class="userNav__name">Hello, admin</div>
+                                            <div class="userNav__username">#admin</div>
+                                        </span>
+                                        <div class="userNav__exit">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="userNav__list">
+
+                                        <div class="userNav__item">
+                                            <a href="./Feedback_page.html" class="userNav__link">Friends</a>
+                                        </div>
+
+                                        <div class="userNav__item">
+                                            <a href="./Feedback_page.html" class="userNav__link">Feedback</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="userNav__button">
+                                        <button>Sign out</button>
+                                    </div>
+
+                                </div>
+                            </div> -->
+
+                        </div>
+
                     </div>
+
                 </div>
 
-                <div class="header__nav-with-search  ">
-                    <div class="header__navbar-wrap  row ">
-                        <ul class="header__navbar-list hide-on-moblile  row">
-                            <li class="header__navbar-item col l-3 m-3  ">
-                                <a href="./index.html" class="header__navbar-item-link">HOME</a>
-                            </li>
-                            <li class="header__navbar-item col l-3 m-3  ">
-                                <a href="./Game_page.html" class="header__navbar-item-link">GAME</a>
-                            </li>
-                            <li class="header__navbar-item col l-3 m-3  ">
-                                <a href="" class="header__navbar-item-link">BETA</a>
-                            </li>
-                            <li class="header__navbar-item col l-3 m-3  ">
-                                <a href="./About_page.html" class="header__navbar-item-link">ABOUT</a>
-                            </li>
-                        </ul>
+            </div>
+        </div>
 
-                        <div class="header__navbar-search col l-5">
-                            <input type="text" placeholder="Search..." class="header__navbar-search-input">
-                            <i class="header__navbar-search-icon fa-solid fa-magnifying-glass"></i>
+
+        <!-- Login/Register form -->
+        <div class="authentication__container">
+
+            <div class="toast__container">
+                <!-- <div class="toast toast--Success">
+                    <div class="toast__icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="toast__body">
+                        <h3 class="toast__title">Success</h3>
+                        <p class="toast__msg">Connect to internet(Window, Ubuntu and MasOS)</p>
+                    </div>
+                    <div class="toast__close">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- Login -->
+            <div class="authentication__login">
+                <div class="authentication__title">Welcome back!</div>
+                <div class="authentication__description">Enter your personal details to use all of site features</div>
+                <div class="authentication__form">
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Username</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. User001">
                         </div>
 
-                        <div class="header__navbar-menu-icon" onclick="openMenu()">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
+                        <!-- <label for="" class="label-message">
+                            <i class="authentication__iconValidated fa-solid fa-triangle-exclamation"></i>
+                            Please enter Username
+                        </label> -->
 
                     </div>
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Password</label>
+                        <div class="authentication__inputContainer">
+                            <input type="password" class="authentication__input" placeholder="Enter password">
+                            <!-- <i class="fa-solid fa-eye"></i> -->
+                            <i class="authentication__iconEye fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+
+                    <div class="authentication__checkContainer">
+                        <input type="checkbox" class="authentication__Check">
+                        <span>Remember me</span>
+                    </div>
+
+                    <div class="login__btn">
+                        <button>Login</button>
+                    </div>
+
+                    <div class="authentication__footer">
+                        Not a member? <a>Register now</a>
+                    </div>
+
                 </div>
             </div>
 
-        </header>
 
-        <div class="app__container">
-            <div class="grid wide">
+            <!-- Register -->
+            <div class="authentication__register">
+                <div class="authentication__title">Hello, Friend!</div>
+                <div class="authentication__description">
+                    Register with your personal details to use all of site features
+                </div>
+                <div class="authentication__form">
 
-                <!-- slider  -->
-                <div style="background-image: url(./asset/img/slider/sliderbg.jpg);" class="slider">
-                    <!-- slider img -->
-                    <div class=" slider-list">
-                        <div class="slider-item">
-                            <img src="./asset/img/slider/ad1.jpg" alt="">
-                        </div>
-
-                        <div class="slider-item">
-                            <img src="./asset/img/slider/ad2.jpg" alt="">
-                        </div>
-
-                        <div class="slider-item">
-                            <img src="./asset/img/slider/ad1.jpg" alt="">
-                        </div>
-
-                        <div class="slider-item">
-                            <img src="./asset/img/slider/ad2.jpg" alt="">
-                        </div>
-
-                        <div class="slider-item">
-                            <img src="./asset/img/slider/ad1.jpg" alt="">
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Name</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. Nguyen Van A">
                         </div>
                     </div>
 
-                    <!-- slider button -->
-                    <div class="slider-button">
-                        <button id="button_pre">
-                            < </button>
-                                <button id="button_nex">></button>
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">User Name</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. User001">
+                        </div>
                     </div>
 
-                    <!-- sldier dots -->
-                    <ul class="slider-dot">
-                        <li class="dot-item__active"></li>
-                        <li class="dot-item"></li>
-                        <li class="dot-item"></li>
-                        <li class="dot-item"></li>
-                        <li class="dot-item"></li>
-                    </ul>
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Password</label>
+                        <div class="authentication__inputContainer">
+                            <input type="password" class="authentication__input" placeholder="Enter password">
+                            <!-- <i class="fa-solid fa-eye"></i> -->
+                            <i class="authentication__iconEye fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+
+                    <div class="authentication__checkContainer">
+                        <input type="checkbox" class="authentication__Check">
+                        <span>Remember me</span>
+                    </div>
+
+                    <div class="register__btn">
+                        <button>Register</button>
+                    </div>
+
+                    <div class="authentication__footer">
+                        Have an account? <a>Login now</a>
+                    </div>
 
                 </div>
+            </div>
+        </div>
 
-                <script src="./javascript/main.js"></script>
+        <!-- Body -->
+        <div class="body">
 
-                <!-- recommend -->
-                <div class="home-post">
-                    <h2 class="home-post__heading">Recommended for you</h2>
+            <div class="body__container grid">
+                <div class="row no-gutters">
 
-                    <div class="home-post-body">
+                    <!-- menu -->
+                    <div class="menu col l-2 m-2">
+                        <div class="menu__container">
+                            <ul class="menu__list">
+
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link activated">
+                                        <i class="fa-solid fa-house"></i>
+                                        <span>Home</span>
+                                    </a>
+
+                                </li>
+
+                                <li class="menu__item ">
+                                    <a href="./Game_page.html" class="menu__link">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        <span>Game</span>
+                                    </a>
+
+                                </li>
+
+                                <li class="menu__item">
+                                    <a href="./Feedback_page.html" class="menu__link">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <span>Feedback</span>
+                                    </a>
+
+                                </li>
+
+                                <li class="menu__item">
+                                    <a href="./About_page.html" class="menu__link">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <span>About</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+
+                            <div class="menu-footer">© 2023 - Khoa</div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Home -->
+                    <div class="home col l-10 m-10">
+
+                        <div class="home__container">
+
+                            <!-- slider -->
+                            <div style="background-image: url();" class="slider">
+                                <!-- slider img -->
+                                <div class="slider-list">
+
+                                    <div class="slider-item">
+                                        <div style="background-image: url(./asset/img_Home/Slider/Comingsoon.png);"
+                                            class="slider-img">
+                                            <!-- <div class="slider-content">
+                                                <div class="item-title">Test For Your Child
+                                                </div>
+                                                <div class="item-description">If your child has any health or mental
+                                                    problems.
+                                                    Suggest some learning tips for children to help improve that problem
+                                                </div>
+                                                <a href="./survey.html" class="btn-link">
+                                                    <button class="item-btn"> TEST NOW
+                                                    </button>
+                                                </a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-item">
+                                        <div style="background-image: url(./asset/img_Home/Slider/Game.png);"
+                                            class="slider-img">
+                                            <div class="slider-content">
+                                                <div class="item-title">Game
+                                                </div>
+                                                <div class="item-description">Click now to dive into an exciting gaming
+                                                    experience!
+                                                </div>
+                                                <a href="./Game_page.html" class="btn-link">
+                                                    <button class="item-btn"> PLAY NOW
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-item">
+                                        <div style="background-image: url(./asset/img_Home/Slider/Ads.png);"
+                                            class="slider-img">
+                                            <div class="slider-content black-content">
+                                                <div class="item-title">Advertisement
+                                                </div>
+                                                <div class="item-description">Elevate your brand with premium
+                                                    advertising
+                                                </div>
+                                                <a href="" class="btn-link ">
+                                                    <button class="item-btn black-content"> CONTACT US
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
 
 
-                        <ul class="home-post-list row ">
 
-                            <li class="home-post-item col l-3 m-6 c-6">
-                                <a href="./asset/game/tictactoe/tictactoe.html" class="home-post-link">
-                                    <img src="./asset/img/Game_img/tictactoe_img.jpg" alt="" class="home-post-img">
-                                </a>
-                            </li>
+                                </div>
 
-                            <li class="home-post-item col l-3 m-6 c-6">
-                                <a href="./asset/game/flappybird/flappybird.html" class="home-post-link">
-                                    <img src="./asset/img/Game_img/flappybird_img.jpg" alt="" class="home-post-img">
-                                </a>
-                            </li>
+                                <!-- slider button -->
+                                <div class="slider-button">
+                                    <button id="button_pre">
+                                        < </button>
+                                            <button id="button_next">></button>
+                                </div>
 
-                            <li class="home-post-item col l-3 m-6 c-6">
-                                <a href="./asset/game/pacman/pacman.html" class="home-post-link">
-                                    <img src="./asset/img/Game_img/pacman_img.jpg" alt="" class="home-post-img">
-                                </a>
-                            </li>
+                                <!-- sldier dots -->
+                                <ul class="slider-dot">
+                                    <li class="dot-item__active"></li>
+                                    <li class="dot-item"></li>
+                                    <li class="dot-item"></li>
+                                    <li class="dot-item"></li>
+                                    <li class="dot-item"></li>
+                                </ul>
 
-                            <li class="home-post-item col l-3 m-6 c-6">
-                                <a href="./asset/game/paint/paint.html" class="home-post-link">
-                                    <img src="./asset/img/Game_img/paint_img.jpg" alt="" class="home-post-img">
-                                </a>
-                            </li>
+                            </div>
 
-                        </ul>
+                            <!-- Game -->
+
+                            <div class="game__container">
+
+                                <div class="game__title">Game</div>
+
+
+
+
+
+                                <ul class="game__list">
+
+                                    <!-- <div class="row">
+
+                                        <li class="game__item col l-3 m-3 c-12">
+                                            <a href="" class="game__link">
+                                                <img src="./asset/img_All/Game_img/flappybird_img.jpg" alt="">
+                                            </a>
+                                        </li>
+
+                                    </div> -->
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
 
 
                     </div>
-                </div>
-
-                <!-- Game -->
-
-                <div class="trend-post">
-                    <a class="trend-post__heading">Game</a>
-
-                    <ul class="trend-post-list row">
-
-                        <li class="trend-post-item col l-4 m-12 c-12">
-                            <a href="./asset/game/tictactoe/tictactoe.html" class="trend-post-link">
-                                <img class="trend-post-img" src="./asset/img/Game3/tictactoe_img.jpg" alt="tictactoe">
-                            </a>
-                            <div class="trend-post-name">Tic Tac Toe</div>
-
-                        </li>
-                        <li class="trend-post-item col l-4 m-12 c-12">
-                            <a href="./asset/game/flappybird/flappybird.html" class="trend-post-link">
-                                <img class="trend-post-img" src="./asset/img/Game3/flappybird_img.jpg" alt="">
-                            </a>
-                            <div class="trend-post-name">Flappy Bird</div>
-                        </li>
-                        <li class="trend-post-item col l-4 m-12 c-12">
-                            <a href="./asset/game/pacman/pacman.html" class="trend-post-link">
-                                <img class="trend-post-img" src="./asset/img/Game3/pacman_img.jpg" alt="">
-                            </a>
-                            <div class="trend-post-name">Pac-Man</div>
-                        </li>
-                        <li class="trend-post-item col l-4 m-12 c-12">
-                            <a href="./asset/game/paint/paint.html" class="trend-post-link">
-                                <img class="trend-post-img" src="./asset/img/Game3/paint_img.jpg" alt="">
-                            </a>
-                            <div class="trend-post-name">Paint</div>
-                        </li>
-                        <li class="trend-post-item col l-4 m-12 c-12">
-                            <a href="" class="trend-post-link">
-                                <img class="trend-post-img" src="./asset/img/imgNotFound.jpg" alt="">
-                            </a>
-                            <div class="trend-post-name">Tic Tac Toe</div>
-                        </li>
-                        <li class="trend-post-item col l-4 m-12 c-12">
-                            <a href="" class="trend-post-link">
-                                <img class="trend-post-img" src="./asset/img/imgNotFound.jpg" alt="">
-                            </a>
-                            <div class="trend-post-name">Tic Tac Toe</div>
-                        </li>
-
-                    </ul>
-
-                    <button class="trend-post__footer">
-                        <a href="./Game_page.html" class="trend-post__footer-link">
-                            Show more
-                            <i class="fa-solid fa-caret-down trend-post__footer-icon"></i>
-                        </a>
-                    </button>
 
                 </div>
-
 
             </div>
-
 
 
         </div>
-        <!-- Footer -->
 
-        <footer class="footer">
-            <div class="grid wide">
-                <div class="row">
-                    <div class="footer_content col l-4 m-4 c-12">
-                        <h3 class="footer__heading">CATEGORY</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="./index.html" class="footer-item__link">Home</a>
-                            </li>
-
-                            <li class="footer-item">
-                                <a href="./Game_page.html" class="footer-item__link">Game</a>
-                            </li>
-
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Beta</a>
-                            </li>
-
-                            <li class="footer-item">
-                                <a href="./About_page.html" class="footer-item__link">About</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="footer_content col l-4 m-4 c-12">
-                        <h3 class="footer__heading">FOLLOW</h3>
-                        <ul class="footer-list">
-
-                            <li class="footer-item">
-                                <i class="footer-item__icon fa-brands fa-github" style="color: #ffffff;"></i>
-                                <a href="https://github.com/Aohkne" class="footer-item__link">Github</a>
-                            </li>
-
-                            <li class="footer-item">
-                                <i class="footer-item__icon fa-brands fa-facebook" style="color: #ffffff;"></i>
-                                <a href="https://www.facebook.com/huukhoa.le.79/" class="footer-item__link">Facebook</a>
-                            </li>
-
-                            <li class="footer-item">
-                                <i class="footer-item__icon fa-brands fa-instagram" style="color: #ffffff;"></i>
-                                <a href="" class="footer-item__link">Instagram</a>
-                            </li>
-
-
-                        </ul>
-                    </div>
-
-                    <div class="footer_content col l-4 m-4 c-12">
-                        <h3 class="footer__heading">CONTACT</h3>
-                        <div class="footer__img">
-                            <img src="./asset/img/qr_img.jpg" alt="Facebook QR" class="footer__img-qr">
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="footer_bottom">
-                <div class="grid wide">
-                    <p class="footer__text">
-                        © 2023 - FNK_Project khoa
-                    </p>
-                </div>
-            </div>
-
-        </footer>
 
 
     </div>
+
 </body>
 
 </html>

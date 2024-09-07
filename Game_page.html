@@ -4,90 +4,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FNK_GAME</title>
+    <title>GameVerse</title>
+
+    <!-- link logo -->
+    <link rel="icon" href="./asset/img_All/logo.png" type="image/x-icon">
+
     <!-- Link css -->
     <link rel="stylesheet" href="./asset/css/Game_page.css">
+    <link rel="stylesheet" href="asset/css/css_All/authentication_Form.css">
     <link rel="stylesheet" href="./asset/css/grid.css">
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/font/fontawesome-free-6.4.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./asset/css/Game_page-responsive.css">
+
+    <!-- link js -->
+    <script src="./javascript/Game_page.js" defer></script>
+    <script src="javascript/javascript_All/authentication_Form.js" defer></script>
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header">
-        <a href="./index.html" class="header__logo-link">
-            <img src="./asset/img_GamePage/logo_img.png" alt="" class="header__logo-img">
-        </a>
+    <div class="app">
 
-        <div class="header__subject">
-            <div class="header__subject-text">
-                Game
+        <!-- Header -->
+        <div class="header">
+            <div class="grid">
+
+                <div class="nav">
+
+                    <div class="row no-gutters">
+
+                        <div class="col l-2 m-3 c-4">
+                            <div class="nav__icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="nav__logo">
+                                <a href="./index.html">
+                                    <img src="./asset/img_All/logoImg.png" alt="GameVerse">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col l-8 m-7 c-6">
+                            <div class="nav__search">
+                                <input type="text">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                            <div class="nav__hint">
+
+                                <!-- <ul class="hint__list">
+                                    <li class="hint__item">Tic tac toe</li>
+                                    <li class="hint__item">Flappy Bird</li>
+                                    <li class="hint__item">Pac-man</li>
+                                </ul> -->
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="nav__user col l-1 m-2 c-2">
+
+                            <div class="nav__signInBtn">
+                                <button>Sign In</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
-    </header>
 
-    <!-- body - game -->
-    <div class="app__container">
-        <div class="grid wide">
-            <!-- list game -->
-            <ul class="game-list row">
+        <!-- Login/Register form -->
+        <div class="authentication__container">
 
-                <li class="game-list-item col l-2-4 m-4 c-6">
-                    <div class="game-list-cover">
-                        <a href="./asset/game/tictactoe/tictactoe.html" class="game-list-link">
-                            <img class="game-list-img" src="./asset/img/Game_img/tictactoe_img.jpg" alt="tictactoe">
-                        </a>
-                        <div class="game-list-name">
-                            <img src="./asset/img_GamePage/icon/tic-tac-toe.png" alt="" class="game-list-icon">
-                            </i> Tic Tac Toe
+            <div class="toast__container">
+                <!-- <div class="toast toast--Success">
+                    <div class="toast__icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="toast__body">
+                        <h3 class="toast__title">Success</h3>
+                        <p class="toast__msg">Connect to internet(Window, Ubuntu and MasOS)</p>
+                    </div>
+                    <div class="toast__close">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- Login -->
+            <div class="authentication__login">
+                <div class="authentication__title">Welcome back!</div>
+                <div class="authentication__description">Enter your personal details to use all of site features</div>
+                <div class="authentication__form">
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Username</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. User001">
+                        </div>
+
+                        <!-- <label for="" class="label-message">
+                            <i class="authentication__iconValidated fa-solid fa-triangle-exclamation"></i>
+                            Please enter Username
+                        </label> -->
+
+                    </div>
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Password</label>
+                        <div class="authentication__inputContainer">
+                            <input type="password" class="authentication__input" placeholder="Enter password">
+                            <!-- <i class="fa-solid fa-eye"></i> -->
+                            <i class="authentication__iconEye fa-solid fa-eye-slash"></i>
                         </div>
                     </div>
-                </li>
 
-                <li class="game-list-item col l-2-4 m-4 c-6">
-                    <div class="game-list-cover">
-                        <a href="./asset/game/flappybird/flappybird.html" class="game-list-link">
-                            <img class="game-list-img" src="./asset/img/Game_img/flappybird_img.jpg" alt="flappybird">
-                        </a>
-                        <div class="game-list-name">
-                            <img src="./asset/img_GamePage/icon/flappy-bird.png" alt="" class="game-list-icon">
-                            </i> Flappy Bird
+                    <div class="authentication__checkContainer">
+                        <input type="checkbox" class="authentication__Check">
+                        <span>Remember me</span>
+                    </div>
+
+                    <div class="login__btn">
+                        <button>Login</button>
+                    </div>
+
+                    <div class="authentication__footer">
+                        Not a member? <a>Register now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Register -->
+            <div class="authentication__register">
+                <div class="authentication__title">Hello, Friend!</div>
+                <div class="authentication__description">
+                    Register with your personal details to use all of site features
+                </div>
+                <div class="authentication__form">
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Name</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. Nguyen Van A">
                         </div>
                     </div>
-                </li>
 
-                <li class="game-list-item col l-2-4 m-4 c-6">
-                    <div class="game-list-cover">
-                        <a href="./asset/game/pacman/pacman.html" class="game-list-link">
-                            <img class="game-list-img" src="./asset/img/Game_img/pacman_img.jpg" alt="pacman">
-                        </a>
-                        <div class="game-list-name">
-                            <img src="./asset/img_GamePage/icon/pac-man.png" alt="" class="game-list-icon">
-                            </i> Pac-Man
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">User Name</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. User001">
                         </div>
                     </div>
-                </li>
 
-                <li class="game-list-item col l-2-4 m-4 c-6">
-                    <div class="game-list-cover">
-                        <a href="./asset/game/paint/paint.html" class="game-list-link">
-                            <img class="game-list-img" src="./asset/img/Game_img/paint_img.jpg" alt="pacman">
-                        </a>
-                        <div class="game-list-name">
-                            <img src="./asset/img_GamePage/icon/paint.png" alt="" class="game-list-icon">
-                            </i> Paint
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Password</label>
+                        <div class="authentication__inputContainer">
+                            <input type="password" class="authentication__input" placeholder="Enter password">
+                            <!-- <i class="fa-solid fa-eye"></i> -->
+                            <i class="authentication__iconEye fa-solid fa-eye-slash"></i>
                         </div>
                     </div>
-                </li>
+
+                    <div class="authentication__checkContainer">
+                        <input type="checkbox" class="authentication__Check">
+                        <span>Remember me</span>
+                    </div>
+
+                    <div class="register__btn">
+                        <button>Register</button>
+                    </div>
+
+                    <div class="authentication__footer">
+                        Have an account? <a>Login now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Body -->
+        <div class="body">
+
+            <div class="body__container grid">
+                <div class="row no-gutters">
+
+                    <!-- menu -->
+                    <div class="menu col l-2 m-2">
+                        <div class="menu__container">
+                            <ul class="menu__list">
+
+                                <li class="menu__item">
+                                    <a href="./index.html" class="menu__link">
+                                        <i class="fa-solid fa-house"></i>
+                                        <span>Home</span>
+                                    </a>
+
+                                </li>
+
+                                <li class="menu__item ">
+                                    <a href="#" class="menu__link activated">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        <span>Game</span>
+                                    </a>
+
+                                </li>
+
+                                <li class="menu__item">
+                                    <a href="./Feedback_page.html" class="menu__link">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <span>Feedback</span>
+                                    </a>
+
+                                </li>
+
+                                <li class="menu__item">
+                                    <a href="./About_page.html" class="menu__link">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <span>About</span>
+                                    </a>
+
+                                </li>
+                            </ul>
+
+                            <div class="menu-footer">© 2023 - Khoa</div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Home -->
+                    <div class="home col l-10 m-10">
+
+                        <div class="home__container">
+
+
+                            <!-- Game -->
+
+                            <div class="game__container">
+
+                                <div class="game__title">Game</div>
 
 
 
 
-            </ul>
+
+                                <ul class="game__list">
+                                    <!-- <div class="row">
+
+                                        <li class="game__item col l-2-4">
+                                            <a href="" class="game__link">
+                                                <div class="game__content">
+                                                    <div class="game__img">
+                                                        <img src="./asset/img_All/Game_img/flappybird_img.jpg" alt="">
+                                                    </div>
+                                                    <div class="game__name">
+                                                        <img src="./asset/img_GamePage/icon/paint.png" alt="">
+                                                        Flappy Bird
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+                                    </div> -->
+
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
 
 
         </div>
+
+
+
     </div>
 
 </body>

@@ -1,9 +1,77 @@
+// open close menu 
+
+let iconMenu = document.querySelector('.nav__icon');
+
+iconMenu.onclick = () => {
+
+    if (window.innerWidth > 739) {
+        //menu
+        var menu = document.querySelector('.menu');
+        var menuFooter = document.querySelector('.menu-footer');
+        var menuContainer = document.querySelector('.menu__container');
+
+        menu.classList.toggle('l-1');
+        menu.classList.toggle('m-1');
+        menu.classList.toggle('l-2');
+        menu.classList.toggle('m-2');
+
+        if (menuFooter.style.display == '' || menuFooter.style.display == 'block') {
+            menuFooter.style.display = 'none';
+        } else {
+            menuFooter.style.display = 'block';
+        }
+
+        if (menuContainer.style.textAlign == '') {
+            menuContainer.style.textAlign = 'center';
+        } else {
+            menuContainer.style.textAlign = '';
+        }
+
+
+
+
+
+
+        //home
+        var home = document.querySelector('.home');
+        var sliderImg = document.querySelectorAll('.slider-img');
+
+        home.classList.toggle('l-11');
+        home.classList.toggle('m-11');
+        home.classList.toggle('l-10');
+        home.classList.toggle('m-10');
+
+        sliderImg.forEach((e) => {
+            if (window.innerWidth > 1024) {
+                if (e.style.width == '' || e.style.width == '80vw') {
+                    e.style.width = '89vw';
+                } else {
+                    e.style.width = '80vw';
+                }
+            }
+            // console.log(e.offsetWidth);
+        });
+    } else {
+
+        var menuContainer = document.querySelector('.menu__container');
+        if (menuContainer.style.display == '' || menuContainer.style.display == 'none') {
+            menuContainer.style.display = 'block';
+        } else {
+            menuContainer.style.display = 'none';
+        }
+
+    }
+
+}
+
+
+
 //slider
 let sliderList = document.querySelector('.slider-list');
 let sliderItem = document.querySelectorAll('.slider-item');
 let sliderDot = document.querySelectorAll('.slider-dot li');
 let prev = document.getElementById('button_pre');
-let next = document.getElementById('button_nex');
+let next = document.getElementById('button_next');
 
 let active = 0;
 let lengthItems = sliderItem.length - 1;
@@ -56,19 +124,68 @@ sliderDot.forEach((li, key) => {
     })
 })
 
+// //Grabbing slider
+// const sliderGrabbing = document.querySelector('.slider-list');
 
-// open nav menu
-// const icon = document.getElementsByClassName('fa-bars');
+// let isDown = false;
+// let startX;
+// let scrollLeft;
 
-function openMenu() {
-    if (document.querySelector('.header__navbar-list').style.display == 'none') {
-        document.querySelector('.fa-bars').classList.add('fa-x');
-        document.querySelector('.header__navbar-list').style.display = 'block';
-    } else {
-        document.querySelector('.fa-bars').classList.remove('fa-x');
-        document.querySelector('.header__navbar-list').style.display = 'none';
+// sliderGrabbing.addEventListener('mousedown', (e) => {
+//     isDown = true;
+//     sliderGrabbing.classList.add('active');
 
-    }
-}
+//     startX = e.pageX - sliderGrabbing.offsetLeft;
+//     scrollLeft = sliderGrabbing.scrollLeft;
+// });
+
+// sliderGrabbing.addEventListener('mouseleave', () => {
+//     isDown = false;
+//     sliderGrabbing.classList.remove('active');
+// });
+
+// sliderGrabbing.addEventListener('mouseup', () => {
+//     isDown = false;
+//     sliderGrabbing.classList.remove('active');
+// });
+
+// sliderGrabbing.addEventListener('mousemove', (e) => {
+//     //stop when dont grabbing
+//     if (!isDown) return;
+//     e.preventDefault();
+//     const x = e.pageX - sliderGrabbing.offsetLeft;
+//     const walk = (x - startX) * 1;
+//     sliderGrabbing.scrollLeft = scrollLeft - walk;
+// });
 
 
+
+//list Game (Show  4 new game )
+
+let gameContainer = document.querySelector('.game__list');
+let listGame = `<div class="row">`;
+fetch("./javascript/database/gameInfo.json")
+
+    .then(function (response) {
+        return response.json();
+    })
+
+    .then(function (game) {
+        for (var i = 3; i >= 0; i--) {
+            listGame += `
+                <li class="game__item col l-3 m-3 c-12">
+                    <a href="${game[i].url}" class="game__link">
+                        <img src="${game[i].img}" alt="">
+                    </a>
+                </li>
+        `;
+        }
+
+        listGame += '</div>';
+        gameContainer.innerHTML = listGame;
+    })
+
+
+    .catch(function (error) {
+        console.error('Error:', error);
+    });

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameVerse</title>
+
+    <!-- link logo -->
+    <link rel="icon" href="./asset/img_All/logo.png" type="image/x-icon">
+
+
+    <!-- link css-->
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="asset/css/css_All/authentication_Form.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/FeedBack_page.css">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-6.4.2-web/css/all.min.css">
+
+    <!-- link js -->
+    <script src="javascript/Feedback_page.js" defer></script>
+    <script src="javascript/javascript_All/authentication_Form.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="grid">
+
+                <div class="nav">
+
+                    <div class="row no-gutters">
+
+                        <span class="col l-2 m-2">
+                            <div class="nav__icon hide-on-tablet hide-on-pc">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <div class="nav__logo">
+                                <a href="./index.html">
+                                    <img src="./asset/img_All/logoImg.png" alt="GameVerse">
+                                </a>
+                            </div>
+                        </span>
+
+
+                        <ul class="nav__category__list col l-8 m-8">
+                            <div class="row">
+
+                                <li class="nav__category__item col l-3 m-3">
+                                    <a href="./index.html" class="nav__category__link">
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li class="nav__category__item col l-3 m-3">
+                                    <a href="./Game_page.html" class="nav__category__link">
+                                        Game
+                                    </a>
+                                </li>
+
+                                <li class="nav__category__item col l-3 m-3">
+                                    <a href="#" class="nav__category__link activated">
+                                        Feedback
+                                    </a>
+                                </li>
+
+                                <li class="nav__category__item col l-3 m-3">
+                                    <a href="./About_page.html" class="nav__category__link">
+                                        About
+                                    </a>
+                                </li>
+
+                            </div>
+                        </ul>
+
+
+                        <div class="nav__user col l-1 m-2">
+
+                            <div class="nav__signInBtn">
+                                <button>Sign In</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Login/Register form -->
+        <div class="authentication__container">
+
+            <div class="toast__container">
+                <!-- <div class="toast toast--Success">
+                    <div class="toast__icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="toast__body">
+                        <h3 class="toast__title">Success</h3>
+                        <p class="toast__msg">Connect to internet(Window, Ubuntu and MasOS)</p>
+                    </div>
+                    <div class="toast__close">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- Login -->
+            <div class="authentication__login">
+                <div class="authentication__title">Welcome back!</div>
+                <div class="authentication__description">Enter your personal details to use all of site features</div>
+                <div class="authentication__form">
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Username</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. User001">
+                        </div>
+
+                        <!-- <label for="" class="label-message">
+                            <i class="authentication__iconValidated fa-solid fa-triangle-exclamation"></i>
+                            Please enter Username
+                        </label> -->
+
+                    </div>
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Password</label>
+                        <div class="authentication__inputContainer">
+                            <input type="password" class="authentication__input" placeholder="Enter password">
+                            <!-- <i class="fa-solid fa-eye"></i> -->
+                            <i class="authentication__iconEye fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+
+                    <div class="authentication__checkContainer">
+                        <input type="checkbox" class="authentication__Check">
+                        <span>Remember me</span>
+                    </div>
+
+                    <div class="login__btn">
+                        <button>Login</button>
+                    </div>
+
+                    <div class="authentication__footer">
+                        Not a member? <a>Register now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Register -->
+            <div class="authentication__register">
+                <div class="authentication__title">Hello, Friend!</div>
+                <div class="authentication__description">
+                    Register with your personal details to use all of site features
+                </div>
+                <div class="authentication__form">
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Name</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. Nguyen Van A">
+                        </div>
+                    </div>
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">User Name</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. User001">
+                        </div>
+                    </div>
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Password</label>
+                        <div class="authentication__inputContainer">
+                            <input type="password" class="authentication__input" placeholder="Enter password">
+                            <!-- <i class="fa-solid fa-eye"></i> -->
+                            <i class="authentication__iconEye fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+
+                    <div class="authentication__checkContainer">
+                        <input type="checkbox" class="authentication__Check">
+                        <span>Remember me</span>
+                    </div>
+
+                    <div class="register__btn">
+                        <button>Register</button>
+                    </div>
+
+                    <div class="authentication__footer">
+                        Have an account? <a>Login now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Body -->
+
+        <div class="body grid wide">
+            <div class="form">
+
+                <div class="row">
+
+                    <div class="form__title col l-12 m-12 c-12">Your Opinion Matters to Us</div>
+                    <div class="form__description col l-12 m-12 c-12">
+                        Tell us what you think! Your feedback helps us improve and serve you better
+                    </div>
+                    <div class="form__select col l-12 m-12 c-12">
+                        <div class="form__selectContent">
+                            <span>Select product</span>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                        <div class="select__list">
+                            <!-- <div class="select__item">Tic tac toe</div>
+                            <div class="select__item">Pac-man</div>
+                            <div class="select__item">Paint</div> -->
+                        </div>
+                    </div>
+
+                    <div class="form__item col l-4 m-4 c-12">
+                        <div class="form__container">
+                            <input type="text" class="form__input" required="required">
+                            <div class="label-title">Name</div>
+                        </div>
+                        <span class="label-message"></span>
+                    </div>
+
+                    <div class="form__item col l-4 m-4 c-12">
+                        <div class="form__container">
+                            <input type="text" class="form__input" required="required">
+                            <div class="label-title">Email</div>
+                        </div>
+                        <span class="label-message"></span>
+                    </div>
+
+                    <div class="form__item col l-4 m-4 c-12">
+                        <div class="form__fileContent">
+                            <input type="file" class="form__file" id="uploadBtn" required="required">
+                            <label style="position: relative;" for="uploadBtn" class="label-title">
+                                <i class="fa-solid fa-paperclip"></i>
+                                Image
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="form__item col l-12 m-12 c-12">
+                        <div class="form__container">
+                            <textarea class="form__input" rows="5" required="required"></textarea>
+                            <div class="label-title">Detail</div>
+                        </div>
+                        <span class="label-message"></span>
+                    </div>
+
+                    <div class="col l-12 m-12 c-12">
+                        <div class="form__btnContainer">
+                            <div class="form__btn">
+                                <button>Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

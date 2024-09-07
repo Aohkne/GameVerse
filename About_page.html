@@ -4,119 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>GameVerse</title>
+
+    <!-- link logo -->
+    <link rel="icon" href="./asset/img_All/logo.png" type="image/x-icon">
+
+
     <!-- link css-->
     <link rel="stylesheet" href="./asset/css/About_page.css">
+    <link rel="stylesheet" href="asset/css/css_All/authentication_Form.css">
     <link rel="stylesheet" href="./asset/css/grid.css">
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/font/fontawesome-free-6.4.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./asset/css/About_page-responsive.css">
 
     <!-- link javascript -->
-    <script src="./javascript/main.js" defer></script>
+    <script src="javascript/About_page.js" defer></script>
+    <script src="javascript/javascript_All/authentication_Form.js" defer></script>
+
 </head>
 
 <body>
     <div class="app">
-        <!-- header -->
-        <header style="background-image: url(./asset/img/header_img.jpg);" class="header">
 
-            <div class="grid wide">
-                <div class="header__nav-with-info">
-                    <a href="#" class="header__logo-link">
-                        <img class="header__logo-img" src="./asset/img/logo_img.jpg" alt="FNK">
-                    </a>
+        <!-- Header -->
+        <div class="header">
+            <div class="grid">
 
-                    <div class="header__user hide-on-moblile">
-                        <a href="" class="header__user-item">Login</a>
-                        <a href="" class="header__user-item">Register</a>
-                    </div>
-                </div>
+                <div class="nav">
 
-                <div class="header__nav-with-search  ">
-                    <div class="header__navbar-wrap  row ">
-                        <ul class="header__navbar-list hide-on-moblile  row">
-                            <li class="header__navbar-item col l-3 m-3  ">
-                                <a href="./index.html" class="header__navbar-item-link">HOME</a>
-                            </li>
-                            <li class="header__navbar-item col l-3 m-3  ">
-                                <a href="./Game_page.html" class="header__navbar-item-link">GAME</a>
-                            </li>
-                            <li class="header__navbar-item col l-3 m-3  ">
-                                <a href="" class="header__navbar-item-link">BETA</a>
-                            </li>
-                            <li class="header__navbar-item col l-3 m-3  ">
-                                <a href="#" class="header__navbar-item-link">ABOUT</a>
-                            </li>
+                    <div class="row no-gutters">
+
+                        <span class="col l-2 m-2">
+                            <div class="nav__icon hide-on-tablet hide-on-pc">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+
+                            <div class="nav__logo">
+                                <a href="./index.html">
+                                    <img src="./asset/img_All/logoImg.png" alt="GameVerse">
+                                </a>
+                            </div>
+                        </span>
+
+
+                        <ul class="nav__category__list col l-8 m-8">
+                            <div class="row">
+
+                                <li class="nav__category__item col l-3 m-3">
+                                    <a href="./index.html" class="nav__category__link">
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li class="nav__category__item col l-3 m-3">
+                                    <a href="./Game_page.html" class="nav__category__link">
+                                        Game
+                                    </a>
+                                </li>
+
+                                <li class="nav__category__item col l-3 m-3">
+                                    <a href="./Feedback_page.html" class="nav__category__link">
+                                        Feedback
+                                    </a>
+                                </li>
+
+                                <li class="nav__category__item col l-3 m-3">
+                                    <a href="#" class="nav__category__link activated">
+                                        About
+                                    </a>
+                                </li>
+
+                            </div>
                         </ul>
 
-                        <div class="header__navbar-search col l-5">
-                            <input type="text" placeholder="Search..." class="header__navbar-search-input">
-                            <i class="header__navbar-search-icon fa-solid fa-magnifying-glass"></i>
-                        </div>
 
-                        <div class="header__navbar-menu-icon" onclick="openMenu()">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
+                        <div class="nav__user col l-1 m-2">
 
-                    </div>
-                </div>
-            </div>
-
-        </header>
-
-        <!-- body -->
-        <div class="app__container">
-            <div class="grid wide">
-                <!-- introduce about me -->
-
-                <div class="seft-post row  ">
-                    <div class="seft-post-introduce  col l-6 c-12">
-                        <div class="seft-post-text">
-                            <h1 class="text-head">HI, I'm Khoa</h1>
-                            <h1 class="text-body">Frontend Developer</h1>
-                            <p class="text-paragraph">
-                                Welcome to my project website! I'm always looking to improve, so please let
-                                me know if you have any ideas or find any problems. I want to make sure you enjoy your
-                                visit, so explore, share feedback, and hopefully find something valuable here.
-                                <br>
-                                Hope you guys love it! ♥️
-                            </p>
-                        </div>
-                        <div class="seft-post-social row">
-
-                            <a href="https://github.com/Aohkne" class="seft-post-link col l-2 m-3 c-3">
-                                <i class="fa-brands fa-github seft-post-icon"></i>
-                            </a>
-
-                            <a href="https://www.facebook.com/huukhoa.le.79/" class="seft-post-link col l-2 m-3 c-3">
-                                <i class="fa-brands fa-facebook seft-post-icon"></i>
-                            </a>
-
-                            <a href="#" class="seft-post-link col l-2 m-3 c-3">
-                                <i class="fa-brands fa-instagram seft-post-icon"></i>
-                            </a>
-
-                            <a href="mailto: aohkne@gmail.com" class="seft-post-link col l-2 m-3 c-3">
-                                <i class="fa-solid fa-envelope seft-post-icon"></i>
-                                <!-- aohkne@gmail.com -->
-                            </a>
-
-                            <button class="seft-btn col l-4 m-12 c-12">
-                                <a href="https://github.com/Aohkne" class="seft-btn-link">
-                                    More Me
-                                    <i class="fa-solid fa-circle-chevron-right seft-btn-icon"></i>
-                                </a>
-                            </button>
-
+                            <div class="nav__signInBtn">
+                                <button>Sign In</button>
+                            </div>
 
                         </div>
-                    </div>
 
-                    <div class="seft-post-img-container col l-5 c-12">
-                        <div class="seft-post-img-background">
-                            <img src="./asset/img_AboutPage/introduce/seft.png" alt="" class="seft-post-img"></img>
-                        </div>
                     </div>
 
                 </div>
@@ -124,76 +94,186 @@
             </div>
         </div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="grid wide">
+        <!-- Login/Register form -->
+        <div class="authentication__container">
+
+            <div class="toast__container">
+                <!-- <div class="toast toast--Success">
+                    <div class="toast__icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="toast__body">
+                        <h3 class="toast__title">Success</h3>
+                        <p class="toast__msg">Connect to internet(Window, Ubuntu and MasOS)</p>
+                    </div>
+                    <div class="toast__close">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- Login -->
+            <div class="authentication__login">
+                <div class="authentication__title">Welcome back!</div>
+                <div class="authentication__description">Enter your personal details to use all of site features</div>
+                <div class="authentication__form">
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Username</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. User001">
+                        </div>
+
+                        <!-- <label for="" class="label-message">
+                            <i class="authentication__iconValidated fa-solid fa-triangle-exclamation"></i>
+                            Please enter Username
+                        </label> -->
+
+                    </div>
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Password</label>
+                        <div class="authentication__inputContainer">
+                            <input type="password" class="authentication__input" placeholder="Enter password">
+                            <!-- <i class="fa-solid fa-eye"></i> -->
+                            <i class="authentication__iconEye fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+
+                    <div class="authentication__checkContainer">
+                        <input type="checkbox" class="authentication__Check">
+                        <span>Remember me</span>
+                    </div>
+
+                    <div class="login__btn">
+                        <button>Login</button>
+                    </div>
+
+                    <div class="authentication__footer">
+                        Not a member? <a>Register now</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Register -->
+            <div class="authentication__register">
+                <div class="authentication__title">Hello, Friend!</div>
+                <div class="authentication__description">
+                    Register with your personal details to use all of site features
+                </div>
+                <div class="authentication__form">
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Name</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. Nguyen Van A">
+                        </div>
+                    </div>
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">User Name</label>
+                        <div class="authentication__inputContainer">
+                            <input type="text" class="authentication__input" placeholder="Eg. User001">
+                        </div>
+                    </div>
+
+                    <div class="authentication__item">
+                        <label for="" class="authentication__label">Password</label>
+                        <div class="authentication__inputContainer">
+                            <input type="password" class="authentication__input" placeholder="Enter password">
+                            <!-- <i class="fa-solid fa-eye"></i> -->
+                            <i class="authentication__iconEye fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+
+                    <div class="authentication__checkContainer">
+                        <input type="checkbox" class="authentication__Check">
+                        <span>Remember me</span>
+                    </div>
+
+                    <div class="register__btn">
+                        <button>Register</button>
+                    </div>
+
+                    <div class="authentication__footer">
+                        Have an account? <a>Login now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Body -->
+
+        <div class="body">
+
+            <div class="information__container grid">
+
                 <div class="row">
-                    <div class="footer_content col l-4 m-4 c-12">
-                        <h3 class="footer__heading">CATEGORY</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="./index.html" class="footer-item__link">Home</a>
-                            </li>
 
-                            <li class="footer-item">
-                                <a href="./Game_page.html" class="footer-item__link">Game</a>
-                            </li>
+                    <div class="information__content col l-6 m-12 c-12">
 
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Beta</a>
-                            </li>
+                        <div class="information__name">HI, I'm Khoa</div>
+                        <div class="information__job">Frontend Developer</div>
+                        <div class="information__description">Welcome to my project website! I'm always looking to
+                            improve, so please let
+                            me know if you have any ideas or find any problems. I want to make sure you enjoy your
+                            visit, so explore, share feedback, and hopefully find something valuable here.
+                            <br>
+                            Hope you guys love it! ♥️
+                        </div>
 
-                            <li class="footer-item">
-                                <a href="./About_page.html" class="footer-item__link">About</a>
-                            </li>
+                        <div class="information__contact">
+                            <div class="row">
 
-                        </ul>
-                    </div>
+                                <a href="https://github.com/Aohkne" class="contact__icon col l-2 m-2 c-2">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
 
-                    <div class="footer_content col l-4 m-4 c-12">
-                        <h3 class="footer__heading">FOLLOW</h3>
-                        <ul class="footer-list">
+                                <a href="https://www.facebook.com/huukhoa.le.79/" class="contact__icon col l-2 m-2 c-2">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
 
-                            <li class="footer-item">
-                                <i class="footer-item__icon fa-brands fa-github" style="color: #ffffff;"></i>
-                                <a href="https://github.com/Aohkne" class="footer-item__link">Github</a>
-                            </li>
+                                <a href="" class="contact__icon col l-2 m-2 c-2">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
 
-                            <li class="footer-item">
-                                <i class="footer-item__icon fa-brands fa-facebook" style="color: #ffffff;"></i>
-                                <a href="https://www.facebook.com/huukhoa.le.79/" class="footer-item__link">Facebook</a>
-                            </li>
+                                <a href="mailto: aohkne@gmail.com" class="contact__icon col l-2 m-2 c-2">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <!-- aohkne@gmail.com -->
+                                </a>
 
-                            <li class="footer-item">
-                                <i class="footer-item__icon fa-brands fa-instagram" style="color: #ffffff;"></i>
-                                <a href="" class="footer-item__link">Instagram</a>
-                            </li>
+                                <div class="col l-4 m-4 c-4">
+
+                                    <button class="contact__btn ">
+                                        <a href="https://github.com/Aohkne" class="contact__link">
+                                            More
+                                            <i class="fa-solid fa-circle-chevron-right"></i>
+                                        </a>
+                                    </button>
+
+                                </div>
 
 
-                        </ul>
-                    </div>
-
-                    <div class="footer_content col l-4 m-4 c-12">
-                        <h3 class="footer__heading">CONTACT</h3>
-                        <div class="footer__img">
-                            <img src="./asset/img/qr_img.jpg" alt="Facebook QR" class="footer__img-qr">
+                            </div>
 
                         </div>
                     </div>
 
+                    <div class="information__img col l-6 m-12 c-12">
+                        <img src="./asset/img_AboutPage/introduce/seft.png" alt="">
+                    </div>
+
                 </div>
 
             </div>
 
-            <div class="footer_bottom">
-                <div class="grid wide">
-                    <p class="footer__text">
-                        © 2023 - FNK_Project khoa
-                    </p>
-                </div>
-            </div>
+        </div>
 
-        </footer>
+
+
 
     </div>
 </body>
