@@ -99,9 +99,13 @@ changeElement.forEach((e) => e.onclick = () => {
 
     //register 
     let registerBtn = authenticationRegister.querySelector('.register__btn button');
-    let nameRegister = authenticationRegister.querySelectorAll('input[type ="text"]')[1];
-    let usernameRegister = authenticationRegister.querySelectorAll('input[type ="text"]')[2];
-    let passwordRegister = authenticationRegister.querySelectorAll('input[type ="password"]')[1];
+    let nameRegister = authenticationRegister.querySelectorAll('input[type ="text"]')[0];
+    let usernameRegister = authenticationRegister.querySelectorAll('input[type ="text"]')[1];
+    let passwordRegister = authenticationRegister.querySelectorAll('input[type ="password"]')[0];
+
+
+
+
 
     registerBtn.onclick = () => {
         if (!checkNull(nameRegister, 'Name') && !checkNull(usernameRegister, 'Name') && !checkNull(passwordRegister, 'password')) {
