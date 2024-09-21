@@ -11,14 +11,30 @@
 
     <!-- link css  -->
     <link rel="stylesheet" href="./main.css">
-    <script src="./flappybird.js"></script>
+    <link rel="stylesheet" href="../asset__howtoPlay/howToPlay.css">
     <link rel="stylesheet" href="./font/fontawesome-free-6.4.2-web/css/all.min.css">
+
+    <!-- link js -->
+    <script src="./flappybird.js"></script>
 </head>
 
 <body>
-    <a onclick="history.back()" class="turnback_icon">
-        <i class="fa-solid fa-rotate-left"></i>
-    </a>
+    <!-- Action -->
+    <div class="action__icon">
+        <div onclick="history.back()" class="icon">
+            <i class="fa-solid fa-circle-chevron-left yellow"></i>
+        </div>
+        <div class="icon howtoplay__icon">
+            <i class="fa-solid fa-circle-question yellow"></i>
+
+            <div class="howtoplay__container blue">
+                <img src="../asset__howtoPlay/img/flappybird.png" alt="howtoplay">
+                <video autoplay loop src="../asset__howtoPlay/vid/flappybird.mp4"></video>
+            </div>
+
+        </div>
+
+    </div>
 
     <canvas id="board"></canvas>
 
