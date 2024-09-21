@@ -232,6 +232,11 @@ html {
     color: var(--primary-black-color);
 }
 
+.slider-item:nth-child(4) .item-btn:hover {
+    background-color: var(--white-color);
+    color: #F4ADB3;
+}
+
 
 .slider-item:nth-child(3) .item-btn:hover {
     background-color: var(--black-color);
