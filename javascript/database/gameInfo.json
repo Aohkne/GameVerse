@@ -1,38 +1,47 @@
 [
-    {
-        "id": 1,
-        "title": "Tic Tac Toe",
-        "img": "./asset/img_All//Game_img/tictactoe_img.jpg",
-        "date": "23-11-2023",
-        "url": "./asset/game/tictactoe/tictactoe.html",
-        "icon": "./asset/img_GamePage/icon/tic-tac-toe.png",
-        "description": "Experience the classic game of Tic Tac Toe in a sleek and modern interface. Challenge your friends in this timeless battle of X and O."
-    },
-    {
-        "id": 2,
-        "title": "Flappy Bird",
-        "img": "./asset/img_All/Game_img/flappybird_img.jpg",
-        "date": "29-12-2023",
-        "url": "./asset/game/flappybird/flappybird.html",
-        "icon": "./asset/img_GamePage/icon/flappy-bird.png",
-        "description": "Fly through a maze of obstacles in this addictive and challenging game. With simple controls and retro-inspired graphics, Flappy Bird will keep you hooked for hours as you strive to beat your high score."
-    },
-    {
-        "id": 3,
-        "title": "Pac-Man",
-        "img": "./asset/img_All//Game_img/pacman_img.jpg",
-        "date": "10-02-2024",
-        "url": "./asset/game/pacman/pacman.html",
-        "icon": "./asset/img_GamePage/icon/pac-man.png",
-        "description": "Join the iconic yellow character on a journey through mazes filled with ghosts and power-ups. Navigate through twists and turns, gobble up pellets, and avoid the ghosts to emerge victorious in this arcade classic."
-    },
-    {
-        "id": 4,
-        "title": "Paint",
-        "img": "./asset/img_All//Game_img/paint_img.jpg",
-        "date": "24-03-2024",
-        "url": "./asset/game/paint/paint.html",
-        "icon": "./asset/img_GamePage/icon/paint.png",
-        "description": "Unleash your creativity with our Paint game! Express yourself through vibrant colours and endless possibilities. Whether you're a seasoned artist or just starting, Paint offers a canvas for you to create masterpieces, doodle freely, or simply have fun experimenting with different tools and brushes."
-    }
+  {
+    "id": 1,
+    "title": "Tic Tac Toe",
+    "img": "./asset/img_All//Game_img/tictactoe_img.jpg",
+    "date": "23-11-2023",
+    "url": "./asset/game/tictactoe/tictactoe.html",
+    "icon": "./asset/img_GamePage/icon/tic-tac-toe.png",
+    "description": "Experience the classic game of Tic Tac Toe in a sleek and modern interface. Challenge your friends in this timeless battle of X and O."
+  },
+  {
+    "id": 2,
+    "title": "Flappy Bird",
+    "img": "./asset/img_All/Game_img/flappybird_img.jpg",
+    "date": "29-12-2023",
+    "url": "./asset/game/flappybird/flappybird.html",
+    "icon": "./asset/img_GamePage/icon/flappy-bird.png",
+    "description": "Fly through a maze of obstacles in this addictive and challenging game. With simple controls and retro-inspired graphics, Flappy Bird will keep you hooked for hours as you strive to beat your high score."
+  },
+  {
+    "id": 3,
+    "title": "Pac-Man",
+    "img": "./asset/img_All//Game_img/pacman_img.jpg",
+    "date": "10-02-2024",
+    "url": "./asset/game/pacman/pacman.html",
+    "icon": "./asset/img_GamePage/icon/pac-man.png",
+    "description": "Join the iconic yellow character on a journey through mazes filled with ghosts and power-ups. Navigate through twists and turns, gobble up pellets, and avoid the ghosts to emerge victorious in this arcade classic."
+  },
+  {
+    "id": 4,
+    "title": "Paint",
+    "img": "./asset/img_All//Game_img/paint_img.jpg",
+    "date": "24-03-2024",
+    "url": "./asset/game/paint/paint.html",
+    "icon": "./asset/img_GamePage/icon/paint.png",
+    "description": "Unleash your creativity with our Paint game! Express yourself through vibrant colours and endless possibilities. Whether you're a seasoned artist or just starting, Paint offers a canvas for you to create masterpieces, doodle freely, or simply have fun experimenting with different tools and brushes."
+  },
+  {
+    "id": 5,
+    "title": "Minesweeper",
+    "img": "./asset/img_All//Game_img/minesweeper_img.jpg",
+    "date": "29-09-2024",
+    "url": "./asset/game/minesweeper/minesweeper.html",
+    "icon": "./asset/img_GamePage/icon/minesweeper.png",
+    "description": "Test your strategy and luck in this thrilling puzzle game, where your objective is to clear the grid without triggering hidden bombs. Use logic and hints to navigate through the minefield, uncover safe tiles, and beat your best time!"
+  }
 ]

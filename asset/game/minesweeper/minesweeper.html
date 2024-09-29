@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+
+    <!-- link logo -->
+    <link rel="icon" href="../../img_All/logo.png" type="image/x-icon">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../asset__howtoPlay/howToPlay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- link js -->
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Action -->
+    <div class="action__icon">
+        <div onclick="history.back()" class="icon">
+            <i class="fa-solid fa-circle-chevron-left green"></i>
+        </div>
+        <div class="icon howtoplay__icon">
+            <i class="fa-solid fa-circle-question green"></i>
+
+            <div class="howtoplay__container green">
+                <img src="../asset__howtoPlay/img/minesweeper.png" alt="howtoplay">
+                <video autoplay loop src="../asset__howtoPlay/vid/minesweeper.mp4"></video>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+
+
+        <div class="content">
+            <div class="line">
+                <div id="flags" class="stats-box cell-box"></div>
+                <div id="timer" class="stats-box cell-box"></div>
+            </div>
+
+            <div class="line">
+                <div class="dropdown-menu-container">
+                    <div id="newgame" class="button dropdown-button">
+                        New Game
+                    </div>
+                    <ul class="dropdown-menu" id="newgameItems">
+                        <li class="button" data-width="12" data-height="10" data-bombs="10">Easy</li>
+                        <li class="button" data-width="18" data-height="14" data-bombs="40">Medium</li>
+                        <li class="button" data-width="24" data-height="20" data-bombs="80">Hard</li>
+                    </ul>
+                </div>
+                <div id="reset" class="button">Reset</div>
+            </div>
+            <div id="board"></div>
+        </div>
+
+    </div>
+
+    <template id="screens">
+        <div class="splash lost hidden">
+            <p>You Lose!</p>
+        </div>
+        <div class="splash win hidden">
+            <p>You win!</p>
+        </div>
+    </template>
+</body>
+
+</html>

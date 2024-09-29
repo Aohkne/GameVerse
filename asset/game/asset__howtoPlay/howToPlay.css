@@ -38,6 +38,10 @@ i.yellow {
     color: yellow;
 }
 
+i.green {
+    color: #a2d149;
+}
+
 .howtoplay__container {
     display: none;
     flex-direction: column;
@@ -67,6 +71,11 @@ i.yellow {
 
     &.blue {
         background-color: #71c5cf;
+        border: 2px solid #fff;
+    }
+
+    &.green {
+        background-color: #a2d149;
         border: 2px solid #fff;
     }
 }

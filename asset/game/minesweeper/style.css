@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@700&display=swaps");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-image: url(./asset/img/bg.jpg);
+    background-size: contain;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    height: 100svh;
+}
+
+.content {
+    font-family: Handjet;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #4a752c;
+}
+
+.line {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.stats-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #000;
+    color: #1be21b;
+    width: 50%;
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    box-shadow: inset -15px -5px 10px #1be21b5b;
+
+    i {
+        color: white;
+        color: #1be21b;
+    }
+}
+
+.button {
+    font-size: 18px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a2d149;
+    box-shadow: 0px 5px 10px #242424;
+}
+
+.button:hover {
+    box-shadow: 0 0 5px #242424;
+}
+
+.button:active {
+    box-shadow: inset 0 0 5px #242424;
+}
+
+#board {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background-color: #aad751;
+    cursor: url('./asset/img/shovel.png'), auto;
+}
+
+.splash {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.splash>p {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: transform 1s 0.5s ease-in, font-size 1s 0.5s ease-in;
+    transform: translateY(0);
+}
+
+.splash.hidden>p {
+    transform: translateY(200px);
+    font-size: 10px;
+}
+
+.lost {
+    background-color: #ad2525a6;
+}
+
+.lost>p {
+    color: #f30707;
+}
+
+.win {
+    background-color: #0c9c0ca6;
+}
+
+.win>p {
+    color: #1be21b;
+}
+
+.row {
+    display: flex;
+
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    /* background-color: #e5c29f; */
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+
+    /* odd */
+    .row:nth-child(2n+1) &:nth-child(2n+1),
+    .row:nth-child(2n) &:nth-child(2n) {
+        background-color: #d7b899;
+    }
+
+    /* even */
+    .row:nth-child(2n+1) &:nth-child(2n),
+    .row:nth-child(2n) &:nth-child(2n+1) {
+        background-color: #e5c29f;
+    }
+}
+
+.cell-box {
+
+    /* odd */
+    .row:nth-child(2n+1) &:nth-child(2n+1).closed,
+    .row:nth-child(2n) &:nth-child(2n).closed {
+        background-color: #a2d149;
+
+        &:hover,
+        &:active {
+            background-color: #caef80;
+        }
+    }
+
+    /* even */
+    .row:nth-child(2n+1) &:nth-child(2n).closed,
+    .row:nth-child(2n) &:nth-child(2n+1).closed {
+        background-color: #aad751;
+
+        &:hover,
+        &:active {
+            background-color: #caef80;
+        }
+    }
+
+
+}
+
+
+.bomb {
+
+    img {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+.flag {
+    height: 80%;
+    width: 65%;
+    border: 1px solid #002466;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-color: #4b7fe0;
+    box-shadow: inset -5px 0 3px #1f61dd;
+}
+
+/* Number */
+.digit--1 {
+    color: #1976d2;
+}
+
+.digit--2 {
+    color: #388e3c;
+}
+
+.digit--3 {
+    color: #d5433f;
+}
+
+.digit--4 {
+    color: #7c20a2;
+}
+
+.digit--5 {
+    color: #fa9922;
+}
+
+.digit--6 {}
+
+.dropdown-menu-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu.visible {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin-top: 2px;
+}
+
+.dropdown-menu li.button {
+
+    &:nth-child(1) {
+        background-color: #97dbae;
+    }
+
+    &:nth-child(2) {
+        background-color: #f4dc70;
+    }
+
+    &:nth-child(3) {
+        background-color: #dc615c;
+    }
+}
