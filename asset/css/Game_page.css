@@ -8,7 +8,7 @@ html {
 /* Header */
 
 .header {
-    padding: 10px 10px 0px;
+    padding: 10px 10px 0;
     background-color: var(--primary-black-color);
 }
 
@@ -41,16 +41,17 @@ html {
 .nav__search {
     position: relative;
     display: flex;
+    height: 80%;
     align-items: center;
     background-color: #474C54;
-    margin: 0 10px;
+    margin: 8px 10px 0;
     padding: 8px 20px;
     border-radius: 10px;
 }
 
 .nav__search input {
     padding: 5px 5px;
-    width: 90%;
+    width: 100%;
     background-color: transparent;
     outline: none;
     border: none;
@@ -103,6 +104,7 @@ html {
 
 .nav__user {
     margin-left: auto;
+    margin-top: auto;
 }
 
 .nav__signInBtn {
@@ -111,7 +113,7 @@ html {
 
 .nav__signInBtn button {
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
     height: 100%;
     padding: 10px 25px;
     border: none;
@@ -181,9 +183,10 @@ html {
 
 .menu-footer {
     position: absolute;
+    width: 100%;
+    left: 0;
     bottom: 10px;
     padding: 5px 0;
-    text-align: center;
     font-size: 1.6rem;
     color: var(--white-color);
     text-align: center;
@@ -297,8 +300,6 @@ html {
     .hide-on-tablet {
         display: none;
     }
-
-
 
 
 }

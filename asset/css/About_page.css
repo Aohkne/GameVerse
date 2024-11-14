@@ -6,6 +6,8 @@ html {
 
 .app {}
 
+
+
 /* Header */
 
 .header {
@@ -146,7 +148,7 @@ html {
 }
 
 .contact__btn {
-    display: block;
+    display: flex;
     margin: 0 auto;
     font-size: 2rem;
     border: none;
@@ -157,7 +159,7 @@ html {
 }
 
 .contact__link {
-    padding: 5px 20px;
+    padding: 5px 15px;
     border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -178,10 +180,10 @@ html {
 .information__img::after {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: 26%;
-    height: 420px;
-    width: 350px;
+    top: 18%;
+    left: 25%;
+    height: 350px;
+    width: 300px;
     background-color: rgba(76, 42, 54, 1);
     z-index: 1;
     border-radius: 10px;
@@ -189,18 +191,20 @@ html {
 }
 
 .information__img img {
+    position: absolute;
+    top: 0%;
+    left: 26%;
     display: block;
     margin: 0 auto;
-    height: 450px;
+    height: 400px;
     user-select: none;
-    position: relative;
     z-index: 2;
 }
 
 
 /* Responsive */
 
-/* Mobile & Tablet */
+/* Pc */
 @media (min-width: 1023px) {
     .hide-on-pc {
         display: none;
@@ -224,6 +228,7 @@ html {
         display: none;
     }
 
+
     /* Header */
     .nav__logo img {
         height: 40px;
@@ -233,10 +238,24 @@ html {
 
     /* Body */
 
-    .information__img::after {
-        left: 28%;
+    .contact__link {
+        padding: 5px 10px;
     }
 
+    .information__img::after {
+
+        top: 16%;
+        left: 20%;
+        height: 300px;
+        width: 250px;
+
+    }
+
+    .information__img img {
+        top: 10%;
+        left: 26%;
+        height: 320px;
+    }
 
 
 }
@@ -246,6 +265,7 @@ html {
     .hide-on-moblile {
         display: none;
     }
+
 
     /* Header */
     .nav__category__list {
@@ -268,27 +288,28 @@ html {
 
     /* Body */
     .body {
-        padding: 20px 10px;
+        padding: 20px 15px;
     }
 
     .information__content {
         color: var(--white-color);
-        margin: 10px 0;
+        margin: 10px 0 20px;
     }
 
     .information__name {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 4rem;
+        line-height: 4.5rem;
 
     }
 
     .information__job {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .information__description {
-        font-size: 1.3rem;
-        line-height: 1.5rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        margin: 20px 0;
     }
 
     .contact__icon {
@@ -301,18 +322,23 @@ html {
 
 
     .contact__btn {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+    }
+
+    .information__img {
+        position: relative;
     }
 
     .information__img::after {
-        height: 220px;
+        top: 16%;
+        left: 22%;
+        height: 280px;
         width: 220px;
     }
 
     .information__img img {
-        display: block;
-        margin: 0 auto;
-        height: 250px;
+        left: 25%;
+        height: 280px;
     }
 
 

@@ -1,10 +1,11 @@
 html {
     background-image: linear-gradient(to top, var(--primary-brown-color), var(--primary-black-color) 50%);
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
-.app {}
+.app {
+    padding: 0 20px;
+}
 
 /* Header */
 
@@ -317,12 +318,15 @@ input[type="file"]:valid+.label-title {
 /* Responsive */
 
 /* Mobile & Tablet */
+/* Pc */
 @media (min-width: 1023px) {
     .hide-on-pc {
         display: none;
     }
 
-
+    html {
+        height: 100%;
+    }
 }
 
 /* Mobile & Tablet */
@@ -338,6 +342,10 @@ input[type="file"]:valid+.label-title {
 @media (min-width: 740px) and (max-width: 1024px) {
     .hide-on-tablet {
         display: none;
+    }
+
+    html {
+        height: 100%;
     }
 
     /* Header */
@@ -395,7 +403,7 @@ input[type="file"]:valid+.label-title {
     }
 
     .form__container {
-        border-radius: 2px;
+        border-radius: 5px;
     }
 
     .form__container textarea+.label-title {
@@ -413,5 +421,11 @@ input[type="file"]:valid+.label-title {
     .form__btn button {
         border-radius: 2px;
     }
+
+
+    .form__fileContent {
+        border-radius: 5px;
+    }
+
 
 }

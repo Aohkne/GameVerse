@@ -8,7 +8,7 @@ html {
 /* Header */
 
 .header {
-    padding: 10px 10px 0px;
+    padding: 10px 10px;
     background-color: var(--primary-black-color);
 }
 
@@ -40,16 +40,13 @@ html {
 
 .nav__user {
     margin-left: auto;
+    margin-top: auto;
 }
 
-.nav__signInBtn {
-    display: block;
-    padding: 10px 0;
-}
 
 .nav__signInBtn button {
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
     height: 100%;
     padding: 10px 25px;
     border: none;
@@ -124,9 +121,10 @@ html {
 
 .menu-footer {
     position: absolute;
-    bottom: 10px;
+    width: 100%;
+    left: 0;
+    bottom: 10%;
     padding: 5px 0;
-    text-align: center;
     font-size: 1.6rem;
     color: var(--white-color);
     text-align: center;
@@ -174,9 +172,10 @@ html {
     display: block;
     margin: auto;
     height: 100%;
-    width: 80vw;
-    background-size: cover;
-    /* object-fit: fill; */
+    width: 85vw;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .slider-content {
@@ -297,7 +296,7 @@ html {
 /* Game */
 
 .game__container {
-    padding: 20px 0;
+    padding: 20px 0 0;
 }
 
 .game__title {
@@ -318,21 +317,21 @@ html {
 .game__item {
     display: flex;
     justify-content: center;
-    cursor: pointer;
-    margin: 10px 0;
 }
 
-.game__item:hover img {
-    transform: translateY(5px);
-    opacity: 0.9;
-    box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.8);
-}
 
 .game__link {
     display: block;
     padding: 0 5px;
-    height: 100%;
+    height: 80%;
     width: 100%;
+    cursor: pointer;
+
+    &:hover img {
+        transform: translateY(5px);
+        opacity: 0.9;
+        box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.8);
+    }
 }
 
 .game__item img {
@@ -342,5 +341,37 @@ html {
     height: 100%;
     width: 100%;
     transition: ease-in 0.2s;
+}
+
+
+/* Responsive */
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-moblile {
+        display: none;
+    }
+
+    .game__item {
+        margin: 20px 0;
+    }
+
+    .game__link {
+        display: block;
+        padding: 0 5px;
+        height: 75%;
+        width: 100%;
+        cursor: pointer;
+
+        &:hover img {
+            transform: translateY(5px);
+            opacity: 0.9;
+            box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .nav__signInBtn button {
+        padding: 10px 10px;
+    }
+
 
 }
