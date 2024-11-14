@@ -28,8 +28,11 @@ My main goal is to entertain and please the players. I aim to provide a platform
           <br><br>
     - Paint (24-03-2024): <br>
           Unleash your creativity with our Paint game! Express yourself through vibrant colours and endless possibilities. Whether you're a seasoned artist or just starting, Paint offers a canvas for you to create masterpieces, doodle freely, or simply have fun experimenting with different tools and brushes.
+          <br><br>
+    - Minesweeper (29-09-2024): <br>
+          Test your strategy and luck in this thrilling puzzle game, where your objective is to clear the grid without triggering hidden bombs. Use logic and hints to navigate through the minefield, uncover safe tiles, and beat your best time!
       
-   3. About: <br>
+   4. About: <br>
       Get in touch with me! Whether you have feedback, questions or suggestions, I am always ready to listen. Get in touch via email, social media or my online contact form. I appreciate your input and strive to        provide the best gaming experience possible.
  
 ## Getting Started
