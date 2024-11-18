@@ -42,6 +42,10 @@ i.green {
     color: #a2d149;
 }
 
+i.pink {
+    color: #f84db9;
+}
+
 .howtoplay__container {
     display: none;
     flex-direction: column;
@@ -71,6 +75,11 @@ i.green {
 
     &.blue {
         background-color: #71c5cf;
+        border: 2px solid #fff;
+    }
+
+    &.dark-blue {
+        background-color: #0b6fa1;
         border: 2px solid #fff;
     }
 
