@@ -31,6 +31,9 @@ My main goal is to entertain and please the players. I aim to provide a platform
           <br><br>
     - Minesweeper (29-09-2024): <br>
           Test your strategy and luck in this thrilling puzzle game, where your objective is to clear the grid without triggering hidden bombs. Use logic and hints to navigate through the minefield, uncover safe tiles, and beat your best time!
+          <br><br>
+    - Piano (18-11-2024): <br>
+         Piano Game is a fun music game that lets you adjust volume and play the piano directly using your keyboard. Unleash your creativity and enjoy music your way! 
       
    4. About: <br>
       Get in touch with me! Whether you have feedback, questions or suggestions, I am always ready to listen. Get in touch via email, social media or my online contact form. I appreciate your input and strive to        provide the best gaming experience possible.
