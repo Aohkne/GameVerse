@@ -51,6 +51,15 @@
     "date": "18-11-2024",
     "url": "./asset/game/piano/piano.html",
     "icon": "./asset/img_GamePage/icon/piano.png",
-    "description": "Piano Game is a fun music game that lets you adjust volume and play the piano directly using your keyboard. Unleash your creativity and enjoy music your way! "
+    "description": "Piano Game is a fun music game that lets you adjust volume and play the piano directly using your keyboard. Unleash your creativity and enjoy music your way!"
+  },
+  {
+    "id": 7,
+    "title": "Chess",
+    "img": "./asset/img_All//Game_img/chess_img.jpg",
+    "date": "21-12-2024",
+    "url": "./asset/game/chess/chess.html",
+    "icon": "./asset/img_GamePage/icon/chess.png",
+    "description": "Engage in a traditional chess game designed for two players. With a simple, minimalist interface and smooth gameplay, this platform provides the perfect space for friendly matches and strategic battles."
   }
 ]
