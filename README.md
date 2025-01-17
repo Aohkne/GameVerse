@@ -37,7 +37,12 @@ My main goal is to entertain and please the players. I aim to provide a platform
           <br><br>
     - Chess (21-12-2024): <br>
           Engage in a traditional chess game designed for two players. With a simple, minimalist interface and smooth gameplay, this platform provides the perfect space for friendly matches and strategic battles.
-      
+          <br><br>
+    - Galactic Blasters (17-12-2025): <br>
+          This game is an exciting adventure where you pilot a spaceship in outer space, battling against dangerous alien monsters. Your mission is to dodge obstacles, eliminate enemies, protect the galaxy, and achieve the highest score! Get ready for an intense journey among the stars.
+        <br><br>
+
+
    4. About: <br>
       Get in touch with me! Whether you have feedback, questions or suggestions, I am always ready to listen. Get in touch via email, social media or my online contact form. I appreciate your input and strive to        provide the best gaming experience possible.
  
