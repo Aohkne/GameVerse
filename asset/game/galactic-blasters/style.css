@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    /* background-color: black; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.game-play {
+    position: relative;
+    height: 576px;
+    margin: auto 0;
+}
+
+p {
+    position: absolute;
+    /* height: 50px; */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 10;
+}

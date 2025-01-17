@@ -46,6 +46,10 @@ i.pink {
     color: #f84db9;
 }
 
+i.purple {
+    color: #BAA0DE;
+}
+
 .howtoplay__container {
     display: none;
     flex-direction: column;

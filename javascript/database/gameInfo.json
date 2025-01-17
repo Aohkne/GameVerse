@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Pac-Man",
-    "img": "./asset/img_All//Game_img/pacman_img.jpg",
+    "img": "./asset/img_All/Game_img/pacman_img.jpg",
     "date": "10-02-2024",
     "url": "./asset/game/pacman/pacman.html",
     "icon": "./asset/img_GamePage/icon/pac-man.png",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "Paint",
-    "img": "./asset/img_All//Game_img/paint_img.jpg",
+    "img": "./asset/img_All/Game_img/paint_img.jpg",
     "date": "24-03-2024",
     "url": "./asset/game/paint/paint.html",
     "icon": "./asset/img_GamePage/icon/paint.png",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "title": "Minesweeper",
-    "img": "./asset/img_All//Game_img/minesweeper_img.jpg",
+    "img": "./asset/img_All/Game_img/minesweeper_img.jpg",
     "date": "29-09-2024",
     "url": "./asset/game/minesweeper/minesweeper.html",
     "icon": "./asset/img_GamePage/icon/minesweeper.png",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "title": "Piano",
-    "img": "./asset/img_All//Game_img/piano_img.jpg",
+    "img": "./asset/img_All/Game_img/piano_img.jpg",
     "date": "18-11-2024",
     "url": "./asset/game/piano/piano.html",
     "icon": "./asset/img_GamePage/icon/piano.png",
@@ -56,10 +56,19 @@
   {
     "id": 7,
     "title": "Chess",
-    "img": "./asset/img_All//Game_img/chess_img.jpg",
+    "img": "./asset/img_All/Game_img/chess_img.jpg",
     "date": "21-12-2024",
     "url": "./asset/game/chess/chess.html",
     "icon": "./asset/img_GamePage/icon/chess.png",
     "description": "Engage in a traditional chess game designed for two players. With a simple, minimalist interface and smooth gameplay, this platform provides the perfect space for friendly matches and strategic battles."
+  },
+  {
+    "id": 8,
+    "title": "Galactic Blasters",
+    "img": "./asset/img_All/Game_img/galactic-blasters.jpg",
+    "date": "17-1-2025",
+    "url": "./asset/game/galactic-blasters/galactic-blasters.html",
+    "icon": "./asset/img_GamePage/icon/galactic-blasters.png",
+    "description": "This game is an exciting adventure where you pilot a spaceship in outer space, battling against dangerous alien monsters. Your mission is to dodge obstacles, eliminate enemies, protect the galaxy, and achieve the highest score! Get ready for an intense journey among the stars."
   }
 ]
